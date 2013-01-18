@@ -1,0 +1,11 @@
+SG MODE:
+W1-R1-W0-R0:
+Write Access Time (W1) = 5.221ns
+Read Access Time (R1) = 9.084ns
+Write Access Time (W0) = 6.692ns
+Read Access Time (R0) = 8.304ns
+W1-R1-W0-R0:
+Write Access Time (W0) = 6.8461ns
+Read Access Time (R0) = 7.881ns
+Write Access Time (W1) = 5.904ns
+Read Access Time (R1) = 8.003ns

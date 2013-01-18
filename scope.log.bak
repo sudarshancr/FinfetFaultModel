@@ -1,0 +1,2720 @@
+Mdi:ArrangeIcons
+wm geometry . 904x648+228+35
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_SG_nm.sw0 1 openonly
+# PF:1
+wm geometry .sigmgr._PF:1 231x341+501+319
+pf:read PF:1 v(q)
+# WF:1:1
+Graph addsignal WF:1:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:1 v(qb)
+# WF:1:2
+Graph addsignal WF:1:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+pf:read PF:1 v(qbd)
+# WF:1:3
+Graph addsignal WF:1:3 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal2
+pf:read PF:1 v(qd)
+# WF:1:4
+Graph addsignal WF:1:4 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal3
+pf:read PF:1 v(v1)
+# WF:1:5
+Graph addsignal WF:1:5 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal4
+pf:read PF:1 v(v2)
+# WF:1:6
+Graph addsignal WF:1:6 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal5
+Graph:DSel
+Graph:Select Graph0
+Graph:DSel
+Graph itemselect Signal5 add
+# Signal5
+Graph sigconfig Signal5 -region 4 -rgnindex 1
+Graph itemselect Signal5 add
+# Signal5
+Graph delsignal selected
+Mdi:ArrangeIcons
+wm geometry . 904x648+229+62
+Mdi:ArrangeIcons
+wm geometry . 904x648+241+205
+Graph:DSel
+pf:read PF:1 v(v2)
+# WF:1:6
+Graph addsignal WF:1:6 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal6
+Mdi:ArrangeIcons
+wm geometry . 904x648+239+152
+wm geometry .sigmgr 376x204+327+42
+Mdi:ArrangeIcons
+wm geometry . 904x648+235+94
+Graph:Select Graph0
+Graph:DSel
+Graph:Select Graph0
+Graph:DSel
+Mdi:ArrangeIcons
+wm geometry . 1012x710+0+0
+Mdi:ArrangeIcons
+Mdi:Resize 800 555
+Mdi:Move 5 5
+Graph:DSel
+Graph itemselect Signal3 add
+# Signal3
+Graph itemselect Signal3 add
+# Signal3
+Graph itemselect Signal3 add
+# Signal3
+Graph sigconfig Signal3 -region 3 -xview real(x) -yview real(y) -fill yellow -linestyle - -symbol {} -bar {} -stipple {} -symwidth 10 -bus none -tracehi 2 -barwidth 0 -width 1
+Graph sigconfig Signal3 -xview monotonic
+Graph sigconfig Signal3 -xview normal
+Graph axisconfig {AxisY(0,0) AxisX(0) AxisY(1,0) AxisY(2,0) AxisY(3,0) AxisY(4,0) AxisY(5,0)} -slider {yes yes yes yes yes yes yes}
+Graph:DSel
+AimCalc
+AimBarItem:Hide .aimCalc
+wm withdraw .aimCalcConstForm
+AimBarItem:Show .aimCalc
+wm geometry .aimCalc 322x303+686+255
+wm geometry .sigmgr._PF:1 231x341+529+79
+pf:read PF:1 v(q) v(qb)
+# WF:1:1 WF:1:2
+pf:read PF:1 v(qb)
+# WF:1:2
+ScopeSigMgr:SetPfXAxis PF:1 WF:1:2
+pf:read PF:1 v(q)
+# WF:1:1
+Graph addsignal WF:1:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal7
+Graph:DSel
+Graph:Select Graph0
+Graph:DSel
+Graph itemselect AxisY(6,0) add
+# AxisY(6,0)
+Graph delsignal selected
+Graph itemselect AxisY(6,0) add
+Graph delsignal selected
+Graph delsignal selected
+Graph itemselect AxisY(6,0) add
+Graph delsignal selected
+Graph itemselect AxisY(6,0) add
+Graph:DSel
+Graph itemselect Signal7 add
+# Signal7
+Graph itemselect Signal7 add
+# Signal7
+Graph:DSel
+Graph axisconfig {AxisY(5,0) AxisX(0)} -range {{1.0569149998284 1.1325450432581} {-0.076808 -0.0615}}
+Graph:DSel
+Graph itemselect AxisX(1) add
+# AxisX(1)
+Graph:DSel
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_SG_nm.sw0 1 openonly
+# PF:1
+GrXY:NewGraph
+# Graph1
+pf:read PF:1 v(q)
+# WF:1:1
+Graph addsignal WF:1:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+Graph:DSel
+Graph:Select Graph1
+Graph:DSel
+Graph itemselect AxisX(0) add
+# AxisX(0)
+Graph:DSel
+Mdi:ArrangeIcons
+wm geometry . 904x648+235+94
+Mdi:ArrangeIcons
+wm geometry .sigmgr._PF:1 231x341+657+93
+wm geometry .sigmgr 376x204+680+62
+wm geometry .sigmgr 376x214+680+52
+Graph:DSel
+Graph:DSel
+Graph:Select Graph1
+Graph:DSel
+Graph itemselect AxisY(0,0) add
+# AxisY(0,0)
+Graph:DSel
+Graph itemselect AxisX(0) add
+# AxisX(0)
+Graph delsignal selected
+Graph:DSel
+Graph:DSel
+Graph itemselect AxisY(0,0) add
+# AxisY(0,0)
+Graph delsignal selected
+Graph:DSel
+Graph itemselect AxisX(0) add
+# AxisX(0)
+Graph itemselect AxisX(0) add
+Graph itemselect AxisX(0) add
+Graph itemselect AxisX(0) add
+Graph:DSel
+Graph:DSel
+Graph:Select Graph1
+Graph:DSel
+Graph itemselect AxisY(0,0) add
+# AxisY(0,0)
+Graph:DSel
+pf:read PF:1 v(qd)
+# WF:1:4
+ScopeSigMgr:SetPfXAxis PF:1 WF:1:4
+Graph:DSel
+Graph:Select Graph1
+Graph:DSel
+Graph itemselect Signal0 add
+# Signal0
+Graph:DSel
+Graph itemselect AxisY(0,0) add
+# AxisY(0,0)
+Graph:DSel
+Graph itemselect AxisX(0) add
+# AxisX(0)
+Graph itemselect AxisX(0) add
+Graph:DSel
+Graph:DSel
+Graph itemselect AxisX(0) add
+# AxisX(0)
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_SG_nm.sw0 1 openonly
+# PF:1
+GrXY:NewGraph
+# Graph2
+pf:read PF:1 v(q) v(qb)
+# WF:1:1 WF:1:2
+Graph addsignal {WF:1:1 WF:1:2} -region {new new} -yview {real(y) real(y)} -xview {real(x) real(x)} -tracehi {2 2}
+# Signal0 Signal1
+Graph:DSel
+Graph:Select Graph2
+Graph:DSel
+Graph itemselect Signal0 add
+# Signal0
+Graph sigconfig {Signal0 Signal1} -region {1 1} -rgnindex {0 1}
+Graph:DSel
+Graph:DSel
+Graph itemselect AxisY(0,0) add
+# AxisY(0,0)
+Graph:DSel
+Graph:DSel
+Graph itemselect AxisX(0) add
+# AxisX(0)
+Graph itemselect AxisX(0) add
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_SG_nm.sw0 1 openonly
+# PF:1
+wm geometry .aimCalc 322x303+451+239
+AimBarItem:Hide .aimCalc
+wm withdraw .aimCalcConstForm
+Mdi:ArrangeIcons
+wm geometry . 904x648+137+71
+pf:read PF:1 v(qb)
+# WF:1:2
+ScopeSigMgr:SetPfXAxis PF:1 WF:1:2
+GrXY:NewGraph
+# Graph3
+pf:read PF:1 v(qd) v(qbd)
+# WF:1:4 WF:1:3
+Graph addsignal {WF:1:4 WF:1:3} -region {new new} -yview {real(y) real(y)} -xview {real(x) real(x)} -tracehi {2 2}
+# Signal0 Signal1
+pf:read PF:1 v(q)
+# WF:1:1
+Graph addsignal WF:1:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal2
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect Signal0 add
+# Signal0
+Graph sigconfig {Signal0 Signal2} -region {2 2} -rgnindex {0 1}
+Graph itemselect Signal0 add
+# Signal0
+Graph sigconfig {Signal0 Signal1 Signal2} -regswap {0 1 2}
+Graph:DSel
+Graph:DSel
+pf:read PF:1 v(qd)
+# WF:1:4
+Graph addsignal WF:1:4 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal3
+Graph:DSel
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect Signal3 add
+# Signal3
+Graph:DSel
+Graph:DSel
+Graph itemselect Signal3 add
+# Signal3
+Graph itemselect Signal3 add
+# Signal3
+Graph delsignal selected
+Graph:DSel
+Graph itemselect Signal2 add
+# Signal2
+Graph delsignal selected
+Graph:DSel
+Graph itemselect Signal1 add
+# Signal1
+Graph delsignal selected
+Graph delsignal selected
+Graph:DSel
+Graph itemselect Signal0 add
+# Signal0
+Graph delsignal selected
+Graph:DSel 0
+Graph:DSel
+pf:read PF:1 v(qd)
+# WF:1:4
+Graph addsignal WF:1:4 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:1 v(qd)
+# WF:1:4
+ScopeSigMgr:SetPfXAxis PF:1 WF:1:4
+pf:read PF:1 v(qb)
+# WF:1:2
+Graph addsignal WF:1:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect Signal0 add
+# Signal0
+Graph sigconfig {Signal0 Signal1} -region {1 1} -rgnindex {0 1}
+Graph:DSel
+.frame1.mdi.mdi4.work.graph3 save -file /home/coimbasn/finfet_fault_modeling/NM_LP_45nm.png -format png  -x 0 -y 0 -w 488 -h 368 -colormode color
+Mdi:ArrangeIcons
+wm geometry . 904x648+191+103
+Graph:DSel
+Graph:Select Graph3
+ScopeSigMgr:Unload 1
+Graph3 delsignal Signal0
+Graph3 delsignal Signal1
+GrXY:NewGraph
+# Graph4
+Graph:Select Graph3
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_45nm_LP.tr0 1 openonly
+# PF:2
+wm geometry .sigmgr._PF:2 231x341+524+340
+wm geometry .sigmgr._PF:2 231x341+559+235
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_LP_nm.sw0 1 openonly
+# PF:3
+wm geometry .sigmgr._PF:3 231x341+634+211
+pf:read PF:3 v(q)
+# WF:3:1
+ScopeSigMgr:SetPfXAxis PF:3 WF:3:1
+pf:read PF:3 v(qb)
+# WF:3:2
+ScopeSigMgr:SetPfXAxis PF:3 WF:3:2
+pf:read PF:3 v(qd)
+# WF:3:3
+Graph addsignal WF:3:3 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:3 v(qd)
+# WF:3:3
+ScopeSigMgr:SetPfXAxis PF:3 WF:3:3
+pf:read PF:3 v(qbd)
+# WF:3:4
+Graph addsignal WF:3:4 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect Signal1 add
+# Signal1
+Graph sigconfig {Signal1 Signal0} -region {0 0} -rgnindex {0 1}
+Graph:DSel
+.frame1.mdi.mdi4.work.graph3 save -file /home/coimbasn/finfet_fault_modeling/NM_LP_45nm.png -format png  -x 0 -y 0 -w 488 -h 368 -colormode color
+Graph:DSel
+Graph:Select Graph3
+ScopeSigMgr:Unload 1
+Graph3 delsignal Signal0
+Graph3 delsignal Signal1
+Graph:DSel
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_SG_nm.sw0 1 openonly
+# PF:4
+wm geometry .sigmgr._PF:4 231x341+512+308
+pf:read PF:4 v(qb)
+# WF:4:1
+ScopeSigMgr:SetPfXAxis PF:4 WF:4:1
+pf:read PF:4 v(qd)
+# WF:4:2
+Graph addsignal WF:4:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:4 v(qd)
+# WF:4:2
+ScopeSigMgr:SetPfXAxis PF:4 WF:4:2
+pf:read PF:4 v(qbd)
+# WF:4:3
+Graph addsignal WF:4:3 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+Graph:DSel
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect Signal1 add
+# Signal1
+Graph sigconfig {Signal1 Signal0} -region {0 0} -rgnindex {0 1}
+Graph:DSel
+.frame1.mdi.mdi4.work.graph3 save -file /home/coimbasn/finfet_fault_modeling/NM_SG_45nm.png -format png  -x 0 -y 0 -w 488 -h 368 -colormode color
+ScopeSigMgr:Unload 1
+Graph3 delsignal Signal0
+Graph3 delsignal Signal1
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_20nm_nm.sw0 1 openonly
+# PF:5
+wm geometry .sigmgr._PF:5 231x341+627+267
+pf:read PF:5 v(qb)
+# WF:5:1
+ScopeSigMgr:SetPfXAxis PF:5 WF:5:1
+pf:read PF:5 v(qd)
+# WF:5:2
+Graph addsignal WF:5:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:5 v(qd)
+# WF:5:2
+ScopeSigMgr:SetPfXAxis PF:5 WF:5:2
+pf:read PF:5 v(qbd)
+# WF:5:3
+Graph addsignal WF:5:3 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect Signal1 add
+# Signal1
+Graph sigconfig {Signal1 Signal0} -region {0 0} -rgnindex {0 1}
+Graph:DSel
+.frame1.mdi.mdi4.work.graph3 save -file /home/coimbasn/finfet_fault_modeling/NM_SG_20nm.png -format png  -x 0 -y 0 -w 488 -h 368 -colormode color
+ScopeSigMgr:Unload 1
+Graph3 delsignal Signal0
+Graph3 delsignal Signal1
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_SG_nm.sw0 1 openonly
+# PF:6
+wm geometry .sigmgr._PF:6 231x341+485+224
+pf:read PF:6 v(qb)
+# WF:6:2
+ScopeSigMgr:SetPfXAxis PF:6 WF:6:2
+pf:read PF:6 v(qd)
+# WF:6:3
+Graph addsignal WF:6:3 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:6 v(q)
+# WF:6:5
+ScopeSigMgr:SetPfXAxis PF:6 WF:6:5
+pf:read PF:6 v(qbd)
+# WF:6:6
+Graph addsignal WF:6:6 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+Graph:DSel
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect Signal1 add
+# Signal1
+Graph sigconfig {Signal1 Signal0} -region {0 0} -rgnindex {0 1}
+Graph delsignal selected
+Graph:DSel
+pf:read PF:6 v(qd)
+# WF:6:3
+ScopeSigMgr:SetPfXAxis PF:6 WF:6:3
+pf:read PF:6 v(qbd)
+# WF:6:6
+Graph addsignal WF:6:6 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal2
+Graph:DSel
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect Signal2 add
+# Signal2
+Graph delsignal selected
+Graph:DSel
+pf:read PF:6 v(qbd)
+# WF:6:6
+ScopeSigMgr:SetPfXAxis PF:6 WF:6:6
+pf:read PF:6 v(q)
+# WF:6:5
+Graph addsignal WF:6:5 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal3
+Graph:DSel
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect Signal3 add
+# Signal3
+Graph delsignal selected
+Graph:DSel
+Graph itemselect Signal0 add
+# Signal0
+Graph delsignal selected
+Graph:DSel
+pf:read PF:6 v(qb)
+# WF:6:2
+pf:read PF:6 v(qb)
+# WF:6:2
+Graph:Select Graph3
+Graph:DSel 0
+Graph:DSel
+pf:read PF:6 v(qbd)
+# WF:6:6
+Graph addsignal WF:6:6 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+Graph:DSel
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect Signal0 add
+# Signal0
+Graph delsignal selected
+Graph:DSel
+pf:read PF:6 v(qd)
+# WF:6:3
+ScopeSigMgr:SetPfXAxis PF:6 WF:6:3
+pf:read PF:6 v(qb)
+# WF:6:2
+ScopeSigMgr:Unload 1
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_SG_nm.sw0 1 openonly
+# PF:7
+wm geometry .sigmgr._PF:7 231x341+747+288
+wm geometry .sigmgr._PF:7 231x406+747+223
+pf:read PF:7 v(qb)
+# WF:7:1
+ScopeSigMgr:SetPfXAxis PF:7 WF:7:1
+pf:read PF:7 v(qd)
+# WF:7:2
+Graph addsignal WF:7:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:7 v(qd)
+# WF:7:2
+ScopeSigMgr:SetPfXAxis PF:7 WF:7:2
+pf:read PF:7 v(q)
+# WF:7:3
+Graph addsignal WF:7:3 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect Signal1 add
+# Signal1
+Graph sigconfig {Signal1 Signal0} -region {0 0} -rgnindex {0 1}
+Graph itemselect Signal1 add
+# Signal1
+Graph delsignal selected
+Graph:DSel
+pf:read PF:7 v(qd)
+# WF:7:2
+ScopeSigMgr:SetPfXAxis PF:7 WF:7:2
+pf:read PF:7 v(q)
+# WF:7:3
+Graph addsignal WF:7:3 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal2
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect Signal2 add
+# Signal2
+Graph sigconfig {Signal2 Signal0} -region {0 0} -rgnindex {0 1}
+Graph delsignal selected
+Graph:DSel
+Graph itemselect Signal0 add
+# Signal0
+Graph delsignal selected
+Graph:DSel
+pf:read PF:7 v(qb)
+# WF:7:1
+ScopeSigMgr:SetPfXAxis PF:7 WF:7:1
+pf:read PF:7 v(qd)
+# WF:7:2
+Graph addsignal WF:7:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:7 v(qd)
+# WF:7:2
+ScopeSigMgr:SetPfXAxis PF:7 WF:7:2
+pf:read PF:7 v(qbd)
+# WF:7:4
+Graph addsignal WF:7:4 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+pf:read PF:7 v(q)
+# WF:7:3
+Graph addsignal WF:7:3 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal2
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect Signal1 add
+# Signal1
+Graph sigconfig {Signal1 Signal0} -region {0 0} -rgnindex {0 1}
+Graph:DSel
+Graph:DSel
+Graph itemselect Signal2 add
+# Signal2
+Graph delsignal selected
+Graph:DSel
+Graph itemselect Signal1 add
+# Signal1
+Graph delsignal selected
+Graph:DSel
+Graph itemselect Signal0 add
+# Signal0
+Graph delsignal selected
+Graph:DSel
+pf:read PF:7 v(qb)
+# WF:7:1
+ScopeSigMgr:SetPfXAxis PF:7 WF:7:1
+pf:read PF:7 v(qd)
+# WF:7:2
+Graph addsignal WF:7:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:7 v(q)
+# WF:7:3
+ScopeSigMgr:SetPfXAxis PF:7 WF:7:3
+pf:read PF:7 v(qbd)
+# WF:7:4
+Graph addsignal WF:7:4 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect Signal1 add
+# Signal1
+Graph sigconfig {Signal1 Signal0} -region {0 0} -rgnindex {0 1}
+Graph:DSel
+Graph itemselect AxisX(0) add
+# AxisX(0)
+Graph:DSel
+Graph axisconfig AxisX(0) -rang {0.0 1.1 exact} -gridvis n -label v(qb)(V) -scale lin -unitscale auto
+Graph:DSel
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisX(1) add
+# AxisX(1)
+Graph:DSel
+Graph axisconfig AxisX(1) -rang {0 1.1 exact} -gridvis n -label v(q)(V) -scale lin -unitscale auto
+Graph:DSel
+Graph:Select Graph3
+Graph axisconfig {AxisY(0,0) AxisX(0) AxisX(1)} -range {{0.84147085916884 0.55085462241958} {0.12863 0.57251} {0.12863 0.57251}}
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0) AxisX(1)} -range {{0.74476681731316 0.64948280526422} {0.2111 0.4728} {0.2111 0.4728}}
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0) AxisX(1)} -range {{0.73886920957603 0.68360448258765} {0.273276 0.460579} {0.273276 0.460579}}
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0) AxisX(1)} -range {{0.72562324430606 0.69259145346243} {0.314217 0.459266} {0.314217 0.459266}}
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0) AxisX(1)} -range {{0.71173406399514 0.68632499411542} {0.318707 0.429806} {0.318707 0.429806}}
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0) AxisX(1)} -range {{0.7060647485988 0.688278399683} {0.330985 0.429328} {0.330985 0.429328}}
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0) AxisX(1)} -range {{0.69924548452508 0.68521756052898} {0.33975 0.420749} {0.33975 0.420749}}
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0) AxisX(1)} -range {{0.69235624056443 0.68616277978125} {0.351957 0.397632} {0.351957 0.397632}}
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0) AxisX(1)} -range {{0.6898775709863 0.6870984539682} {0.367272 0.39101} {0.367272 0.39101}}
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0) AxisX(1)} -range {{0.68890002616711 0.68759781133577} {0.365621 0.387069} {0.365621 0.387069}}
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0) AxisX(1)} -range {{0.68842619208054 0.68771156199017} {0.3713605 0.3840034} {0.3713605 0.3840034}}
+Graph axisconfig {AxisX(0) AxisX(1) AxisY(0,0)} -range {all all all} -zoomed {0 0 0}
+Graph:DSel
+Graph itemselect AxisY(0,0) add
+# AxisY(0,0)
+Graph:DSel
+Graph itemselect Signal1 add
+# Signal1
+Graph itemselect Signal1 add
+# Signal1
+Graph sigconfig Signal1 -region 0 -rgnindex 2
+Graph:DSel
+Graph itemselect Signal0 add
+# Signal0
+Graph delsignal selected
+Graph:DSel
+Graph itemselect Signal1 add
+# Signal1
+Graph delsignal selected
+Graph:DSel
+pf:read PF:7 v(qb)
+# WF:7:1
+ScopeSigMgr:SetPfXAxis PF:7 WF:7:1
+pf:read PF:7 v(qd)
+# WF:7:2
+Graph addsignal WF:7:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:7 v(qd)
+# WF:7:2
+ScopeSigMgr:SetPfXAxis PF:7 WF:7:2
+pf:read PF:7 v(qbd)
+# WF:7:4
+Graph addsignal WF:7:4 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect Signal1 add
+# Signal1
+Graph sigconfig {Signal1 Signal0} -region {0 0} -rgnindex {0 1}
+Graph:DSel
+Graph itemselect AxisY(0,0) add
+# AxisY(0,0)
+Graph:DSel
+Graph axisconfig AxisY(0,0) -rang {0.0 1.2 exact} -gridvis n -label (V) -scale lin -unitscale auto
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisY(0,0) add
+# AxisY(0,0)
+Graph:DSel
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisY(0,0) add
+# AxisY(0,0)
+Graph:DSel
+Graph axisconfig AxisY(0,0) -rang {0.0 1.5 exact} -gridvis n -label (V) -scale lin -unitscale auto
+Graph axisconfig AxisY(0,0) -rang {0.0 1.2 exact} -gridvis n -label (V) -scale lin -unitscale auto
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisX(0) add
+# AxisX(0)
+Graph:DSel
+Graph axisconfig AxisX(0) -rang {0.0 1.2 exact} -gridvis n -label v(qb)(V) -scale lin -unitscale auto
+Graph:DSel
+Graph:Select Graph3
+Graph:DSel
+Graph:DSel
+Graph itemselect AxisX(0) add
+# AxisX(0)
+Graph:DSel
+Graph axisconfig AxisX(0) -rang {0.0 1.5 exact} -gridvis n -label v(qb)(V) -scale lin -unitscale auto
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisX(1) add
+# AxisX(1)
+Graph:DSel
+Graph axisconfig AxisX(1) -rang {0 1.2} -gridvis n -label v(qd)(V) -scale lin -unitscale auto
+Graph axisconfig AxisX(1) -rang {0.0 1.5 exact} -gridvis n -label v(qd)(V) -scale lin -unitscale auto
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisX(1) add
+# AxisX(1)
+Graph:DSel
+Graph axisconfig AxisX(1) -rang {0.2 1.5 exact} -gridvis n -label v(qd)(V) -scale lin -unitscale auto
+Graph axisconfig AxisX(1) -rang {0 1.5 exact} -gridvis n -label v(qd)(V) -scale lin -unitscale auto
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisX(0) add
+# AxisX(0)
+Graph:DSel
+Graph axisconfig AxisX(0) -rang {0.0 1.3 exact} -gridvis n -label v(qb)(V) -scale lin -unitscale auto
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisX(0) add
+# AxisX(0)
+Graph:DSel
+Graph axisconfig AxisX(0) -rang {0.0 1.5 exact} -gridvis n -label v(qb)(V) -scale lin -unitscale auto
+Mdi:Resize 722 454
+Mdi:Move 5 5
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisX(1) add
+# AxisX(1)
+Graph:DSel
+Graph axisconfig AxisX(1) -rang {0.0 1.2 exact} -gridvis n -label v(qd)(V) -scale lin -unitscale auto
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisX(1) add
+# AxisX(1)
+Graph:DSel
+Graph axisconfig AxisX(1) -rang {0.2 1.2 exact} -gridvis n -label v(qd)(V) -scale lin -unitscale auto
+Graph:DSel
+Graph:Select Graph3
+Graph:DSel
+ScopeSigMgr:Unload 1
+Graph3 delsignal Signal0
+Graph3 delsignal Signal1
+Graph:DSel
+Graph:Select Graph3
+Graph:DSel 0
+Graph:DSel
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_SG_nm_test.sw0 1 openonly
+# PF:8
+wm geometry .sigmgr._PF:8 231x341+513+371
+wm geometry .sigmgr._PF:8 231x341+636+319
+wm geometry .sigmgr._PF:8 231x341+688+304
+pf:read PF:8 v(vin1)
+# WF:8:1
+ScopeSigMgr:SetPfXAxis PF:8 WF:8:1
+pf:read PF:8 v(vout1)
+# WF:8:2
+Graph addsignal WF:8:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+Graph:DSel
+Graph:Select Graph3
+Mdi:ArrangeIcons
+wm geometry . 628x648+467+103
+Mdi:ArrangeIcons
+wm geometry . 628x648+169+46
+Mdi:ArrangeIcons
+wm geometry . 529x504+268+190
+Mdi:ArrangeIcons
+wm geometry . 529x504+421+32
+Mdi:ArrangeIcons
+wm geometry . 529x504+331+23
+Graph axisconfig {AxisX(0) AxisY(0,0)} -range {all all} -zoomed {0 0}
+ScopeSigMgr:Unload 1
+Graph3 delsignal Signal0
+Mdi:Resize 589 367
+Mdi:Move 138 92
+Mdi:Move 97 61
+Mdi:Move 14 16
+Mdi:ArrangeIcons
+wm geometry . 631x504+331+23
+Mdi:ArrangeIcons
+wm geometry . 631x504+191+27
+Mdi:ArrangeIcons
+wm geometry . 631x504+366+144
+Graph:DSel
+Graph:Select Graph3
+Graph:DSel 0
+Graph:DSel
+Mdi:ArrangeIcons
+wm geometry . 631x504+381+131
+Graph:Select Graph3
+Graph:DSel 0
+Graph:DSel
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_SG_nm_test.sw1 1 openonly
+# PF:9
+wm geometry .sigmgr._PF:9 231x341+649+303
+wm geometry .sigmgr._PF:9 231x341+667+288
+pf:read PF:9 v(vin1)
+# WF:9:1
+ScopeSigMgr:SetPfXAxis PF:9 WF:9:1
+pf:read PF:9 v(vout1)
+# WF:9:2
+Graph addsignal WF:9:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:9 v(vin1)
+# WF:9:1
+Graph addsignal WF:9:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+Graph:DSel
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect Signal1 add
+# Signal1
+Graph delsignal selected
+Graph:DSel
+Graph itemselect Signal0 add
+# Signal0
+Graph delsignal selected
+Graph:DSel 0
+Graph:DSel
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_SG_nm_test.sw0 1 openonly
+# PF:10
+wm geometry .sigmgr._PF:10 231x341+546+342
+wm geometry .sigmgr._PF:10 231x341+546+304
+pf:read PF:10 v(vin1)
+# WF:10:2
+Graph addsignal WF:10:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisY(0,0) add
+# AxisY(0,0)
+Graph:DSel
+Graph:DSel
+Graph itemselect Signal0 add
+# Signal0
+Graph delsignal selected
+Graph:DSel
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_SG_nm_test.sw0 1 openonly
+# PF:10
+pf:read PF:10 v(vin1)
+# WF:10:2
+ScopeSigMgr:SetPfXAxis PF:10 WF:10:2
+pf:read PF:10 v(vout1)
+# WF:10:3
+Graph addsignal WF:10:3 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+Graph:DSel
+Graph:Select Graph3
+ScopeSigMgr:SetDefaultXAxis .sigmgr._PF:10 PF:10
+Graph:DSel
+pf:read PF:10 v(vout2)
+# WF:10:6
+Graph addsignal WF:10:6 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+Graph:DSel
+Graph:Select Graph3
+Graph:DSel
+ScopeSigMgr:Unload 1
+Graph3 delsignal Signal0
+Graph3 delsignal Signal1
+GrXY:NewGraph
+# Graph5
+Graph:Select Graph3
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_SG_nm_test.sw0 1 openonly
+# PF:11
+wm geometry .sigmgr._PF:11 231x341+540+310
+pf:read PF:11 v(vin1)
+# WF:11:1
+ScopeSigMgr:SetPfXAxis PF:11 WF:11:1
+pf:read PF:11 v(vout1)
+# WF:11:2
+Graph addsignal WF:11:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:11 v(vin2)
+# WF:11:3
+ScopeSigMgr:SetPfXAxis PF:11 WF:11:3
+pf:read PF:11 v(vout2)
+# WF:11:4
+Graph addsignal WF:11:4 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+Graph:DSel
+Graph itemselect AxisY(0,0) add
+# AxisY(0,0)
+Graph:Select Graph3
+ScopeSigMgr:Unload 1
+Graph3 delsignal Signal0
+Graph3 delsignal Signal1
+Graph:DSel
+Graph:Select Graph3
+Graph:DSel 0
+Graph:DSel
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_SG_nm_test.sw0 1 openonly
+# PF:12
+wm geometry .sigmgr._PF:12 231x341+633+287
+pf:read PF:12 v(vin1)
+# WF:12:2
+ScopeSigMgr:SetPfXAxis PF:12 WF:12:2
+pf:read PF:12 v(vout1)
+# WF:12:1
+Graph addsignal WF:12:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisY(0,0) add
+# AxisY(0,0)
+Graph:DSel
+pf:read PF:12 v(vin1)
+# WF:12:2
+Graph addsignal WF:12:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+pf:read PF:12 v(vout1)
+# WF:12:1
+Graph addsignal WF:12:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal2
+Graph:DSel
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect Signal2 add
+# Signal2
+Graph delsignal selected
+Graph:DSel
+Graph itemselect Signal1 add
+# Signal1
+Graph itemselect Signal1 add
+# Signal1
+Graph delsignal selected
+Graph:DSel
+Graph itemselect Signal0 add
+# Signal0
+Graph delsignal selected
+Graph:DSel
+Graph:Select Graph3
+Graph:DSel 0
+Graph:DSel
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_SG_nm_test.sw0 1 openonly
+# PF:13
+pf:read PF:13 v(vin1)
+# WF:13:1
+Graph addsignal WF:13:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:13 v(vout1)
+# WF:13:2
+Graph addsignal WF:13:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisY(1,0) add
+# AxisY(1,0)
+Graph:DSel
+Graph itemselect Signal1 add
+# Signal1
+Graph delsignal selected
+Graph:DSel
+Graph itemselect Signal0 add
+# Signal0
+Graph delsignal selected
+Graph:DSel
+wm geometry .sigmgr._PF:13 231x341+623+330
+wm geometry .sigmgr._PF:13 231x341+678+307
+pf:read PF:13 v(vin1)
+# WF:13:1
+ScopeSigMgr:SetPfXAxis PF:13 WF:13:1
+wm geometry .sigmgr._PF:13 231x341+694+276
+pf:read PF:13 v(vout1)
+# WF:13:2
+Graph addsignal WF:13:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+Graph:DSel
+Graph:Select Graph3
+ScopeSigMgr:Unload 1
+Graph3 delsignal Signal0
+Mdi:ArrangeIcons
+wm geometry . 631x504+214+179
+Mdi:ArrangeIcons
+wm geometry . 631x504+352+108
+Graph:DSel 0
+Graph:DSel
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_SG_nm_test.sw0 1 openonly
+# PF:14
+wm geometry .sigmgr._PF:14 231x346+512+379
+wm geometry .sigmgr._PF:14 231x346+656+199
+pf:read PF:14 v(vin1)
+# WF:14:1
+ScopeSigMgr:SetPfXAxis PF:14 WF:14:1
+pf:read PF:14 v(vout1)
+# WF:14:2
+Graph addsignal WF:14:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:14 v(vin2)
+# WF:14:3
+ScopeSigMgr:SetPfXAxis PF:14 WF:14:3
+pf:read PF:14 v(vout2)
+# WF:14:4
+Graph addsignal WF:14:4 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisX(1) add
+# AxisX(1)
+ScopeSigMgr:Unload 1
+Graph3 delsignal Signal0
+Graph3 delsignal Signal1
+Graph:DSel 0
+Graph:DSel
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_SG_nm_test.sw0 1 openonly
+# PF:15
+pf:read PF:15 v(vin1)
+# WF:15:1
+Graph addsignal WF:15:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+Graph:DSel
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect Signal0 add
+# Signal0
+Graph delsignal selected
+Graph:DSel
+wm geometry .sigmgr._PF:15 231x341+642+310
+pf:read PF:15 v(vin2)
+# WF:15:2
+ScopeSigMgr:SetPfXAxis PF:15 WF:15:2
+pf:read PF:15 v(vin1)
+# WF:15:1
+ScopeSigMgr:SetPfXAxis PF:15 WF:15:1
+pf:read PF:15 v(vout2)
+# WF:15:3
+Graph addsignal WF:15:3 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+Graph:DSel
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect Signal0 add
+# Signal0
+Graph delsignal selected
+Graph:DSel
+pf:read PF:15 v(vout1)
+# WF:15:4
+Graph addsignal WF:15:4 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+Graph:DSel
+Graph:Select Graph3
+Graph:DSel
+ScopeSigMgr:Reload 0 {{(1) sram_SG_nm_test.sw0}}
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisX(0) add
+# AxisX(0)
+Graph:DSel
+ScopeSigMgr:Reload 0 {{(1) sram_SG_nm_test.sw0}}
+pf:read PF:17 v(vin2)
+# WF:17:3
+ScopeSigMgr:SetPfXAxis PF:17 WF:17:3
+pf:read PF:17 v(vout2)
+# WF:17:4
+Graph addsignal WF:17:4 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal3
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisX(1) add
+# AxisX(1)
+Graph:DSel
+Graph itemselect AxisX(0) add
+# AxisX(0)
+Graph:DSel
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_SG_nm_test.sw1 1 openonly
+# PF:18
+wm geometry .sigmgr._PF:18 231x341+571+260
+pf:read PF:18 v(vin2)
+# WF:18:1
+ScopeSigMgr:SetPfXAxis PF:18 WF:18:1
+pf:read PF:18 v(vout2)
+# WF:18:2
+Graph addsignal WF:18:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal4
+Graph:DSel
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect Signal4 add
+# Signal4
+Graph delsignal selected
+Graph:DSel
+Graph itemselect Signal3 add
+# Signal3
+Graph delsignal selected
+GrXY:NewGraph
+# Graph6
+Graph:Select Graph3
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_SG_nm_test.sw1 1 openonly
+# PF:18
+pf:read PF:18 v(vout2)
+# WF:18:2
+ScopeSigMgr:SetPfXAxis PF:18 WF:18:2
+pf:read PF:18 v(vin2)
+# WF:18:1
+Graph addsignal WF:18:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal5
+pf:read PF:18 v(vin2)
+# WF:18:1
+Graph addsignal WF:18:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal6
+Graph:DSel
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect Signal6 add
+# Signal6
+Graph delsignal selected
+Graph:DSel
+Graph itemselect Signal5 add
+# Signal5
+Graph delsignal selected
+Graph:DSel
+pf:read PF:18 v(vout2)
+# WF:18:2
+ScopeSigMgr:SetPfXAxis PF:18 WF:18:2
+pf:read PF:18 v(vin2)
+# WF:18:1
+Graph addsignal WF:18:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal7
+Graph:DSel
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect Signal7 add
+# Signal7
+Graph sigconfig Signal7 -region 0 -rgnindex 1
+Graph:DSel
+.frame1.mdi.mdi4.work.graph3 save -file /home/coimbasn/finfet_fault_modeling/NM_SG_45nm.png -format png  -x 0 -y 0 -w 587 -h 363 -colormode color
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisX(1) add
+# AxisX(1)
+ScopeSigMgr:Unload 1
+Graph3 delsignal Signal7
+Graph3 delsignal Signal2
+Graph:DSel
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_LP_nm_test.sw0 1 openonly
+# PF:19
+wm geometry .sigmgr._PF:19 231x341+575+308
+pf:read PF:19 v(vin1)
+# WF:19:1
+ScopeSigMgr:SetPfXAxis PF:19 WF:19:1
+pf:read PF:19 v(vout1)
+# WF:19:2
+Graph addsignal WF:19:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_LP_nm_test.sw1 1 openonly
+# PF:20
+wm geometry .sigmgr._PF:20 231x341+596+328
+wm geometry .sigmgr._PF:20 231x341+616+293
+pf:read PF:20 v(vout2)
+# WF:20:1
+ScopeSigMgr:SetPfXAxis PF:20 WF:20:1
+pf:read PF:20 v(vin2)
+# WF:20:2
+Graph addsignal WF:20:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+Graph:DSel
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect Signal1 add
+# Signal1
+Graph sigconfig {Signal1 Signal0} -region {0 0} -rgnindex {0 1}
+Graph:DSel
+.frame1.mdi.mdi4.work.graph3 save -file /home/coimbasn/finfet_fault_modeling/NM_LP_45nm.png -format png  -x 0 -y 0 -w 587 -h 363 -colormode color
+Mdi:ArrangeIcons
+wm geometry . 631x504+88+55
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect Signal1 add
+# Signal1
+Graph sigconfig Signal1 -region 0 -rgnindex 2
+Graph itemselect Signal1 add
+# Signal1
+Graph sigconfig {Signal1 Signal0} -region {0 0} -rgnindex {0 1}
+Graph itemselect Signal1 add
+# Signal1
+Graph sigconfig {Signal1 Signal0} -region {0 0} -rgnindex {1 2}
+Graph:DSel
+Graph:DSel
+.frame1.mdi.mdi4.work.graph3 save -file /home/coimbasn/finfet_fault_modeling/NM_LP_45nm.png -format png  -x 0 -y 0 -w 587 -h 363 -colormode color
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisY(0,0) add
+# AxisY(0,0)
+Graph:DSel
+Graph axisconfig AxisY(0,0) -rang {0 2 exact} -gridvis n -label (V) -scale lin -unitscale auto
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect Signal0 add
+# Signal0
+Graph sigconfig {Signal0 Signal1} -region {0 0} -rgnindex {0 1}
+Graph:DSel
+Graph:DSel
+.frame1.mdi.mdi4.work.graph3 save -file /home/coimbasn/finfet_fault_modeling/NM_LP_45nm.png -format png  -x 0 -y 0 -w 587 -h 363 -colormode color
+Graph:DSel
+Graph:Select Graph3
+ScopeSigMgr:Unload 1
+Graph3 delsignal Signal1
+Graph3 delsignal Signal0
+wm geometry .sigmgr 376x214+481+52
+Graph:DSel
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_SG_nm_test.sw0 1 openonly
+# PF:21
+wm geometry .sigmgr._PF:21 231x341+507+301
+pf:read PF:21 v(vin1)
+# WF:21:1
+ScopeSigMgr:SetPfXAxis PF:21 WF:21:1
+pf:read PF:21 v(vout1)
+# WF:21:2
+Graph addsignal WF:21:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_SG_nm_test.sw1 1 openonly
+# PF:22
+wm geometry .sigmgr._PF:22 231x341+560+251
+pf:read PF:22 v(vout2)
+# WF:22:1
+ScopeSigMgr:SetPfXAxis PF:22 WF:22:1
+pf:read PF:22 v(vin2)
+# WF:22:2
+Graph addsignal WF:22:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+Graph:DSel
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect Signal1 add
+# Signal1
+Graph sigconfig {Signal1 Signal0} -region {0 0} -rgnindex {0 1}
+Graph:DSel
+Graph:DSel
+ScopeSigMgr:Reload 0 {{(1) sram_SG_nm_test.sw0} {(2) sram_SG_nm_test.sw1}}
+ScopeSigMgr:Unload 1
+Graph3 delsignal Signal1
+Graph3 delsignal Signal0
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_SG_nm_test.sw0
+# PF:23
+Graph:Select Graph3
+Graph:DSel 0
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_SG_nm_test.sw0
+# PF:24
+Graph:DSel
+wm geometry .sigmgr._PF:24 231x341+562+233
+pf:read PF:24 v(vin1)
+# WF:24:1
+ScopeSigMgr:SetPfXAxis PF:24 WF:24:1
+pf:read PF:24 v(vout1)
+# WF:24:2
+Graph addsignal WF:24:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_SG_nm_test.sw1 1 openonly
+# PF:25
+wm geometry .sigmgr._PF:25 231x341+554+282
+pf:read PF:25 v(vout2)
+# WF:25:1
+ScopeSigMgr:SetPfXAxis PF:25 WF:25:1
+pf:read PF:25 v(vin2)
+# WF:25:2
+Graph addsignal WF:25:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+Graph:DSel
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect Signal1 add
+# Signal1
+Graph sigconfig {Signal1 Signal0} -region {0 0} -rgnindex {0 1}
+Graph:DSel
+Graph itemselect AxisY(0,0) add
+# AxisY(0,0)
+Graph:DSel
+ScopeSigMgr:Reload 0 {{(1) sram_SG_nm_test.sw0} {(2) sram_SG_nm_test.sw0} {(3) sram_SG_nm_test.sw1}}
+.frame1.mdi.mdi4.work.graph3 save -file /home/coimbasn/finfet_fault_modeling/NM_SG_45nm1.png -format png  -x 0 -y 0 -w 587 -h 363 -colormode color
+ScopeSigMgr:Unload 1
+Graph3 delsignal Signal3
+Graph3 delsignal Signal2
+Mdi:ArrangeIcons
+wm geometry . 631x504+133+80
+Graph:Select Graph3
+Graph:DSel 0
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_LP_nm_test.sw0
+# PF:28
+wm geometry .sigmgr._PF:28 231x341+514+272
+Graph:DSel
+pf:read PF:28 v(vin1)
+# WF:28:1
+ScopeSigMgr:SetPfXAxis PF:28 WF:28:1
+pf:read PF:28 v(vout1)
+# WF:28:2
+Graph addsignal WF:28:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_LP_nm_test.sw1
+# PF:29
+wm geometry .sigmgr._PF:29 231x341+541+330
+pf:read PF:29 v(vout2)
+# WF:29:1
+ScopeSigMgr:SetPfXAxis PF:29 WF:29:1
+pf:read PF:29 v(vin2)
+# WF:29:2
+Graph addsignal WF:29:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+Graph:DSel
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect Signal1 add
+# Signal1
+Graph sigconfig {Signal1 Signal0} -region {0 0} -rgnindex {0 1}
+Graph:DSel
+Graph:DSel
+.frame1.mdi.mdi4.work.graph3 save -file /home/coimbasn/finfet_fault_modeling/NM_LP_45nm1.png -format png  -x 0 -y 0 -w 587 -h 363 -colormode color
+ScopeSigMgr:Unload 1
+Graph3 delsignal Signal1
+Graph3 delsignal Signal0
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_SG_nm.sw0 1 openonly
+# PF:30
+wm geometry .sigmgr._PF:30 231x341+513+265
+pf:read PF:30 v(qb)
+# WF:30:1
+Graph addsignal WF:30:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:30 v(qd)
+# WF:30:2
+Graph addsignal WF:30:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+Graph:DSel
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect Signal1 add
+# Signal1
+Graph delsignal selected
+Graph:DSel
+Graph itemselect Signal0 add
+# Signal0
+Graph delsignal selected
+Graph:DSel
+pf:read PF:30 v(qb)
+# WF:30:1
+ScopeSigMgr:SetPfXAxis PF:30 WF:30:1
+pf:read PF:30 v(qd)
+# WF:30:2
+Graph addsignal WF:30:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:30 v(qbd)
+# WF:30:3
+ScopeSigMgr:SetPfXAxis PF:30 WF:30:3
+pf:read PF:30 v(q)
+# WF:30:4
+Graph addsignal WF:30:4 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+Graph:DSel
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect Signal1 add
+# Signal1
+Graph sigconfig {Signal1 Signal0} -region {0 0} -rgnindex {0 1}
+Graph:DSel
+Graph itemselect AxisY(0,0) add
+# AxisY(0,0)
+Graph:DSel
+Graph axisconfig AxisY(0,0) -rang {0 1.5 exact} -gridvis n -label (V) -scale lin -unitscale auto
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisX(0) add
+# AxisX(0)
+Graph:DSel
+Graph itemselect AxisX(1) add
+# AxisX(1)
+Graph:DSel
+Graph axisconfig AxisX(1) -rang {0.2 1.4 exact} -gridvis n -label v(qbd)(V) -scale lin -unitscale auto
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisX(1) add
+# AxisX(1)
+Graph:DSel
+Graph axisconfig AxisX(1) -rang {0 1.4 exact} -gridvis n -label v(qbd)(V) -scale lin -unitscale auto
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisX(0) add
+# AxisX(0)
+Graph:DSel
+Graph axisconfig AxisX(0) -rang {-1.5 1.5 exact} -gridvis n -label v(qb)(V) -scale lin -unitscale auto
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisX(1) add
+# AxisX(1)
+Graph:DSel
+Graph axisconfig AxisX(1) -rang {-1.5 1.5 exact} -gridvis n -label v(qbd)(V) -scale lin -unitscale auto
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisX(0) add
+# AxisX(0)
+Graph:DSel
+Graph axisconfig AxisX(0) -rang {-0.5 1.5 exact} -gridvis n -label v(qb)(V) -scale lin -unitscale auto
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisX(1) add
+# AxisX(1)
+Graph:DSel
+Graph axisconfig AxisX(1) -rang {-0.5 1.5 exact} -gridvis n -label v(qbd)(V) -scale lin -unitscale auto
+.frame1.mdi.mdi4.work.graph3 save -file /home/coimbasn/finfet_fault_modeling/test_SG.png -format png  -x 0 -y 0 -w 587 -h 363 -colormode color
+ScopeSigMgr:Unload 1
+Graph3 delsignal Signal0
+Graph3 delsignal Signal1
+GrXY:NewGraph
+# Graph7
+Graph:Select Graph3
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_LP_nm.sw0 1 openonly
+# PF:31
+wm geometry .sigmgr._PF:31 231x341+525+309
+pf:read PF:31 v(qb)
+# WF:31:1
+ScopeSigMgr:SetPfXAxis PF:31 WF:31:1
+pf:read PF:31 v(qd)
+# WF:31:2
+Graph addsignal WF:31:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:31 v(qbd)
+# WF:31:3
+ScopeSigMgr:SetPfXAxis PF:31 WF:31:3
+pf:read PF:31 v(q)
+# WF:31:4
+Graph addsignal WF:31:4 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+Graph:DSel
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect Signal1 add
+# Signal1
+Graph sigconfig {Signal1 Signal0} -region {0 0} -rgnindex {0 1}
+Graph:DSel
+Graph itemselect AxisX(0) add
+# AxisX(0)
+Graph:DSel
+Graph axisconfig AxisX(0) -rang {-0.5 1.5 exact} -gridvis n -label v(qb)(V) -scale lin -unitscale auto
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisX(1) add
+# AxisX(1)
+Graph:DSel
+Graph axisconfig AxisX(1) -rang {-0.5 1.2} -gridvis n -label v(qbd)(V) -scale lin -unitscale auto
+.frame1.mdi.mdi4.work.graph3 save -file /home/coimbasn/finfet_fault_modeling/test2.png -format png  -x 0 -y 0 -w 587 -h 363 -colormode color
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisY(0,0) add
+# AxisY(0,0)
+Graph:DSel
+Graph axisconfig AxisY(0,0) -rang {0 1.5 exact} -gridvis n -label (V) -scale lin -unitscale auto
+Graph:DSel
+Graph:Select Graph3
+Graph:DSel
+.frame1.mdi.mdi4.work.graph3 save -file /home/coimbasn/finfet_fault_modeling/test_LP.png -format png  -x 0 -y 0 -w 587 -h 363 -colormode color
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisY(0,0) add
+# AxisY(0,0)
+Graph:DSel
+.frame1.mdi.mdi4.work.graph3 save -file /home/coimbasn/finfet_fault_modeling/LP_nm_new.png -format png  -x 0 -y 0 -w 587 -h 363 -colormode color
+ScopeSigMgr:Unload 1
+Graph3 delsignal Signal0
+Graph3 delsignal Signal1
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_SG_nm_test.sw0 1 openonly
+# PF:32
+Graph:Select Graph3
+Graph:DSel 0
+Graph:DSel
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_SG_nm_test_20.sw0 1 openonly
+# PF:33
+wm geometry .sigmgr._PF:33 231x341+563+306
+pf:read PF:33 v(vin1)
+# WF:33:1
+ScopeSigMgr:SetPfXAxis PF:33 WF:33:1
+pf:read PF:33 v(vout1)
+# WF:33:2
+Graph addsignal WF:33:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_SG_nm_test_20.sw1 1 openonly
+# PF:34
+wm geometry .sigmgr._PF:34 231x341+582+298
+pf:read PF:34 v(vout2)
+# WF:34:1
+ScopeSigMgr:SetPfXAxis PF:34 WF:34:1
+pf:read PF:34 v(vin2)
+# WF:34:2
+Graph addsignal WF:34:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisX(1) add
+# AxisX(1)
+Graph:DSel
+Graph itemselect Signal1 add
+# Signal1
+Graph sigconfig {Signal1 Signal0} -region {0 0} -rgnindex {0 1}
+Graph:DSel
+Graph itemselect AxisY(0,0) add
+# AxisY(0,0)
+Graph:DSel
+Graph axisconfig AxisY(0,0) -rang {0 1.6 exact} -gridvis n -label (V) -scale lin -unitscale auto
+Graph:DSel
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisY(0,0) add
+# AxisY(0,0)
+Graph:DSel
+Graph axisconfig AxisY(0,0) -rang {0.0 1.7 exact} -gridvis n -label (V) -scale lin -unitscale auto
+Graph axisconfig AxisY(0,0) -rang {0.0 1.6 exact} -gridvis n -label (V) -scale lin -unitscale auto
+Graph axisconfig AxisY(0,0) -rang {0.0 1.5 exact} -gridvis n -label (V) -scale lin -unitscale auto
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisX(0) add
+# AxisX(0)
+Graph:DSel
+Graph itemselect AxisX(1) add
+# AxisX(1)
+Graph:DSel
+Graph axisconfig AxisX(1) -rang {0.0 1.6 exact} -gridvis n -label v(vout2)(V) -scale lin -unitscale auto
+ScopeSigMgr:Unload 1
+Graph3 delsignal Signal1
+Graph3 delsignal Signal0
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_SG_nm_test.sw0 1 openonly
+# PF:35
+Graph:Select Graph3
+Graph:DSel 0
+Graph:DSel
+wm geometry .sigmgr._PF:35 231x341+575+252
+pf:read PF:35 v(vin1)
+# WF:35:1
+ScopeSigMgr:SetPfXAxis PF:35 WF:35:1
+pf:read PF:35 v(vout1)
+# WF:35:2
+Graph addsignal WF:35:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_SG_nm_test.sw1 1 openonly
+# PF:36
+wm geometry .sigmgr._PF:36 231x341+570+229
+pf:read PF:36 v(vout2)
+# WF:36:1
+ScopeSigMgr:SetPfXAxis PF:36 WF:36:1
+pf:read PF:36 v(vin2)
+# WF:36:2
+Graph addsignal WF:36:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+Graph:DSel
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect Signal1 add
+# Signal1
+Graph sigconfig Signal1 -region 0 -rgnindex 1
+Graph:DSel
+Graph itemselect AxisX(1) add
+# AxisX(1)
+Graph:DSel
+Graph axisconfig AxisX(1) -rang {0.0 1.6 exact} -gridvis n -label v(vout2)(V) -scale lin -unitscale auto
+Graph:DSel
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisY(0,0) add
+# AxisY(0,0)
+Graph itemselect AxisY(0,0) add
+Graph:DSel
+Graph axisconfig AxisY(0,0) -rang {0 1.5 exact} -gridvis n -label (V) -scale lin -unitscale auto
+Mdi:ArrangeIcons
+wm geometry . 631x504+133+85
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisY(0,0) add
+# AxisY(0,0)
+Graph:DSel
+ScopeSigMgr:Reload 0 {{(1) sram_SG_nm_test.sw0} {(2) sram_SG_nm_test.sw1}}
+Graph:DSel
+Graph:Select Graph3
+Graph:DSel
+Graph:DSel
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisY(0,0) add
+# AxisY(0,0)
+Graph:DSel
+ScopeSigMgr:Reload 0 {{(1) sram_SG_nm_test.sw0} {(2) sram_SG_nm_test.sw1}}
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisY(0,0) add
+# AxisY(0,0)
+GrXY:NewGraph
+# Graph8
+Graph:Select Graph3
+ScopeSigMgr:Reload 0 {{(1) sram_SG_nm_test.sw0} {(2) sram_SG_nm_test.sw1}}
+Graph:DSel
+Graph:Select Graph3
+Graph:DSel
+ScopeSigMgr:Reload 0 {{(1) sram_SG_nm_test.sw0} {(2) sram_SG_nm_test.sw1}}
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisY(0,0) add
+# AxisY(0,0)
+Graph itemselect AxisY(0,0) add
+Graph:DSel
+ScopeSigMgr:Reload 0 {{(1) sram_SG_nm_test.sw0} {(2) sram_SG_nm_test.sw1}}
+GrXY:NewGraph
+# Graph9
+Graph:Select Graph9
+Graph:DSel 0
+Graph:DSel
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_SG_nm_test_20.sw0 1 openonly
+# PF:47
+wm geometry .sigmgr._PF:47 231x341+580+305
+pf:read PF:47 v(vin1)
+# WF:47:2
+ScopeSigMgr:SetPfXAxis PF:47 WF:47:2
+pf:read PF:47 v(vout1)
+# WF:47:3
+Graph addsignal WF:47:3 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_SG_nm_test_20.sw1 1 openonly
+# PF:48
+wm geometry .sigmgr._PF:48 231x341+602+326
+pf:read PF:48 v(vout2)
+# WF:48:1
+ScopeSigMgr:SetPfXAxis PF:48 WF:48:1
+pf:read PF:48 v(vin2)
+# WF:48:2
+Graph addsignal WF:48:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+Graph:DSel
+Graph:Select Graph9
+Graph:DSel
+Graph itemselect Signal1 add
+# Signal1
+Graph sigconfig {Signal1 Signal0} -region {0 0} -rgnindex {0 1}
+Graph:DSel
+Graph:DSel
+Graph itemselect AxisX(1) add
+# AxisX(1)
+Graph:DSel
+Graph axisconfig AxisX(1) -rang {0.0 1.5 exact} -gridvis n -label v(vout2)(V) -scale lin -unitscale auto
+Graph:Select Graph3
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisY(0,0) add
+# AxisY(0,0)
+Graph:DSel
+ScopeSigMgr:Reload 0 {{(1) sram_SG_nm_test.sw0} {(2) sram_SG_nm_test.sw1}}
+Mdi:Move 26 22
+Graph:DSel
+Graph:Select Graph3
+Mdi:Iconify
+Graph:Select Graph9
+Graph:DSel
+Mdi:Iconify
+Graph:Select Graph9
+Graph:Select Graph3
+Graph:DSel
+Mdi:Deiconify
+Mdi:FullSize
+Mdi:Iconify
+Graph:Select Graph3
+Graph:Select Graph9
+Graph:DSel
+Mdi:Deiconify
+Mdi:FullSize
+Mdi:Iconify
+Graph:Select Graph9
+Graph:Select Graph3
+Graph:DSel
+Mdi:Deiconify
+Graph:DSel
+Graph:DSel
+Graph:DSel
+ScopeSigMgr:Reload 0 {{(1) sram_SG_nm_test.sw0} {(2) sram_SG_nm_test.sw1}}
+Graph:DSel
+Graph:Select Graph3
+Graph:DSel
+ScopeSigMgr:Reload 0 {{(1) sram_SG_nm_test.sw0} {(2) sram_SG_nm_test.sw1}}
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisY(0,0) add
+# AxisY(0,0)
+Graph:DSel
+ScopeSigMgr:Reload 0 {{(1) sram_SG_nm_test.sw0} {(2) sram_SG_nm_test.sw1}}
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisX(0) add
+# AxisX(0)
+Graph:DSel
+Graph axisconfig AxisX(0) -rang {0.0 1.6 exact} -gridvis n -label v(vin1)(V) -scale lin -unitscale auto
+Graph:DSel
+Graph:Select Graph3
+Graph:DSel
+ScopeSigMgr:Reload 0 {{(1) sram_SG_nm_test.sw0} {(2) sram_SG_nm_test.sw1}}
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisX(1) add
+# AxisX(1)
+Graph:DSel
+ScopeSigMgr:Reload 0 {{(1) sram_SG_nm_test.sw0} {(2) sram_SG_nm_test.sw1}}
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisY(0,0) add
+# AxisY(0,0)
+Graph:DSel
+ScopeSigMgr:Reload 0 {{(1) sram_SG_nm_test.sw0} {(2) sram_SG_nm_test.sw1}}
+Graph:DSel
+Graph:Select Graph3
+GrXY:NewGraph
+# Graph10
+Graph:DSel
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_SG_nm.sw0 1 openonly
+# PF:63
+wm geometry .sigmgr._PF:63 231x341+608+260
+pf:read PF:63 v(qb)
+# WF:63:1
+ScopeSigMgr:SetPfXAxis PF:63 WF:63:1
+pf:read PF:63 v(qd)
+# WF:63:2
+Graph addsignal WF:63:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:63 v(qbd)
+# WF:63:3
+ScopeSigMgr:SetPfXAxis PF:63 WF:63:3
+pf:read PF:63 v(q)
+# WF:63:4
+Graph addsignal WF:63:4 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+Graph:DSel
+Graph:Select Graph10
+Graph:DSel
+Graph itemselect Signal1 add
+# Signal1
+Graph sigconfig {Signal1 Signal0} -region {0 0} -rgnindex {0 1}
+Graph:DSel
+Graph itemselect AxisX(1) add
+# AxisX(1)
+Graph:DSel
+Graph axisconfig AxisX(1) -rang {0 1.5 exact} -gridvis n -label v(qbd)(V) -scale lin -unitscale auto
+Graph:Select Graph10
+Graph:DSel
+Graph itemselect AxisY(0,0) add
+# AxisY(0,0)
+Graph:DSel
+Graph axisconfig AxisY(0,0) -rang {0 1.5 exact} -gridvis n -label (V) -scale lin -unitscale auto
+Graph:Select Graph10
+Graph:DSel
+Graph itemselect AxisY(0,0) add
+# AxisY(0,0)
+Graph:DSel
+ScopeSigMgr:Reload 0 {{(5) sram_SG_nm.sw0}}
+Graph:DSel
+Graph:Select Graph10
+Graph:Select Graph3
+Graph:DSel
+Graph:DSel
+Graph itemselect AxisY(0,0) add
+# AxisY(0,0)
+Graph:DSel
+ScopeSigMgr:Reload 0 {{(1) sram_SG_nm_test.sw0} {(2) sram_SG_nm_test.sw1}}
+Graph:DSel
+Graph:Select Graph3
+Graph:DSel
+ScopeSigMgr:Reload 0 {{(1) sram_SG_nm_test.sw0} {(2) sram_SG_nm_test.sw1}}
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisX(0) add
+# AxisX(0)
+GrXY:NewGraph
+# Graph11
+Graph:DSel
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_LP_nm_test.sw0 1 openonly
+# PF:69
+wm geometry .sigmgr._PF:69 231x341+646+254
+pf:read PF:69 v(vin1)
+# WF:69:1
+ScopeSigMgr:SetPfXAxis PF:69 WF:69:1
+pf:read PF:69 v(vout1)
+# WF:69:2
+Graph addsignal WF:69:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+Graph:DSel
+Graph:Select Graph11
+Graph:DSel
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_LP_nm_test.sw1 1 openonly
+# PF:70
+wm geometry .sigmgr._PF:70 231x341+668+222
+pf:read PF:70 v(vout2)
+# WF:70:1
+ScopeSigMgr:SetPfXAxis PF:70 WF:70:1
+pf:read PF:70 v(vin2)
+# WF:70:2
+Graph addsignal WF:70:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+Graph:DSel
+Graph:Select Graph11
+Graph:DSel
+Graph itemselect Signal1 add
+# Signal1
+Graph sigconfig Signal1 -region 0 -rgnindex 1
+Mdi:Move 70 36
+Graph:DSel
+Graph itemselect AxisX(1) add
+# AxisX(1)
+Graph:DSel
+Graph axisconfig AxisX(1) -rang {0.0 1.5 exact} -gridvis n -label v(vout2)(V) -scale lin -unitscale auto
+Mdi:FullSize
+Mdi:Iconify
+Graph:Select Graph3
+Mdi:Iconify
+Graph:Select Graph10
+Mdi:FullSize
+Mdi:Iconify
+Graph:Select Graph10
+Graph:Select Graph11
+Mdi:Deiconify
+Graph:Select Graph11
+Graph:DSel
+Graph itemselect AxisX(1) add
+# AxisX(1)
+Graph:DSel
+Graph:Select Graph11
+Graph:DSel
+Graph itemselect AxisX(0) add
+# AxisX(0)
+Graph:DSel
+Graph axisconfig AxisX(0) -rang {0.0 1.5 exact} -gridvis n -label v(vin1)(V) -scale lin -unitscale auto
+Graph:Select Graph11
+Graph:DSel
+Graph itemselect AxisX(0) add
+# AxisX(0)
+Graph:DSel
+Graph axisconfig AxisX(0) -rang {0.0 1.2 exact} -gridvis n -label v(vin1)(V) -scale lin -unitscale auto
+Graph:Select Graph11
+Graph:DSel
+Graph itemselect AxisX(1) add
+# AxisX(1)
+Graph:DSel
+Graph axisconfig AxisX(1) -rang {0.0 1.2 exact} -gridvis n -label v(vout2)(V) -scale lin -unitscale auto
+Mdi:Iconify
+Graph:Select Graph11
+Graph:Select Graph10
+Mdi:Deiconify
+Graph:Select Graph3
+Graph:Select Graph9
+Graph:Select Graph11
+Graph:Select Graph11
+Mdi:Deiconify
+Mdi:Iconify
+Graph:Select Graph11
+Graph:Select Graph9
+Mdi:Deiconify
+Graph:Select Graph9
+Graph:DSel
+Graph itemselect AxisX(1) add
+# AxisX(1)
+Graph:DSel
+Graph axisconfig AxisX(1) -rang {0.0 1.6 exact} -gridvis n -label v(vout2)(V) -scale lin -unitscale auto
+Graph:Select Graph9
+Graph:DSel
+Graph itemselect AxisX(0) add
+# AxisX(0)
+Graph:DSel
+Graph axisconfig AxisX(0) -rang {0.0 1.2 exact} -gridvis n -label v(vin1)(V) -scale lin -unitscale auto
+Graph:Select Graph9
+Graph:DSel
+Graph itemselect AxisX(1) add
+# AxisX(1)
+Graph:DSel
+Graph axisconfig AxisX(1) -rang {0.0 1.2 exact} -gridvis n -label v(vout2)(V) -scale lin -unitscale auto
+Mdi:Iconify
+Graph:Select Graph9
+Graph:Select Graph3
+Mdi:Deiconify
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisX(0) add
+# AxisX(0)
+Graph:DSel
+Graph axisconfig AxisX(0) -rang {0.0 1.2 exact} -gridvis n -label v(vin1)(V) -scale lin -unitscale auto
+Graph:DSel
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisX(1) add
+# AxisX(1)
+Graph:DSel
+Graph axisconfig AxisX(1) -rang {0.0 1.2 exact} -gridvis n -label v(vout2)(V) -scale lin -unitscale auto
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisX(0) add
+# AxisX(0)
+Graph:DSel
+Graph axisconfig AxisX(0) -rang {0.0 1.3 exact} -gridvis n -label v(vin1)(V) -scale lin -unitscale auto
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisX(1) add
+# AxisX(1)
+Graph:DSel
+Graph axisconfig AxisX(1) -rang {0.0 1.3 exact} -gridvis n -label v(vout2)(V) -scale lin -unitscale auto
+Mdi:Iconify
+Graph:Select Graph3
+Graph:Select Graph11
+Mdi:Deiconify
+Mdi:Iconify
+Graph:Select Graph11
+Graph:Select Graph3
+Mdi:Deiconify
+Mdi:Iconify
+Graph:Select Graph3
+Graph:Select Graph3
+Mdi:Deiconify
+Mdi:NormalSize
+Mdi:Iconify
+Graph:Select Graph3
+Graph:Select Graph11
+Mdi:Deiconify
+Mdi:NormalSize
+Mdi:Move 56 47
+Mdi:Move 52 114
+Mdi:Move 55 20
+Mdi:Iconify
+Graph:Select Graph11
+Graph:Select Graph3
+Mdi:Deiconify
+Mdi:Iconify
+Graph:Select Graph3
+Graph:Select Graph11
+Mdi:Deiconify
+Mdi:FullSize
+Mdi:Iconify
+Graph:Select Graph11
+Graph:Select Graph9
+Mdi:Deiconify
+Mdi:Iconify
+Graph:Select Graph9
+Graph:Select Graph3
+Mdi:Deiconify
+Mdi:FullSize
+Mdi:Iconify
+Graph:Select Graph3
+Graph:Select Graph11
+Mdi:Deiconify
+Graph:Select Graph11
+Graph:DSel
+ScopeSigMgr:Reload 0 {{(1) sram_SG_nm_test.sw0} {(2) sram_SG_nm_test.sw1}}
+ScopeSigMgr:Reload 0 {{(1) sram_SG_nm_test.sw0} {(2) sram_SG_nm_test.sw1} {(3) sram_SG_nm_test_20.sw0} {(4) sram_SG_nm_test_20.sw1} {(5) sram_SG_nm.sw0} {(6) sram_LP_nm_test.sw0} {(7) sram_LP_nm_test.sw1}}
+Graph:DSel
+Graph:Select Graph11
+Graph:DSel
+Graph itemselect AxisX(0) add
+# AxisX(0)
+Graph:DSel
+ScopeSigMgr:Reload 0 {{(1) sram_SG_nm_test.sw0} {(2) sram_SG_nm_test.sw1}}
+Graph:Select Graph11
+Graph:DSel
+Graph itemselect AxisX(0) add
+# AxisX(0)
+Graph:DSel
+ScopeSigMgr:Reload 0 {{(1) sram_SG_nm_test.sw0} {(2) sram_SG_nm_test.sw1}}
+Mdi:Iconify
+Graph:Select Graph11
+Graph:Select Graph9
+Mdi:Deiconify
+Mdi:Iconify
+Graph:Select Graph9
+Graph:Select Graph3
+Mdi:Deiconify
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisY(0,0) add
+# AxisY(0,0)
+Graph:DSel
+ScopeSigMgr:Reload 0 {{(1) sram_SG_nm_test.sw0} {(2) sram_SG_nm_test.sw1}}
+Graph:DSel
+Graph:Select Graph3
+Graph:DSel
+.frame1.mdi.mdi4.work.graph3 save -file /home/coimbasn/finfet_fault_modeling/NM_SG_latest.png -format png  -x 0 -y 0 -w 619 -h 380 -colormode color
+Mdi:Iconify
+Graph:Select Graph3
+Graph:Select Graph11
+Mdi:Deiconify
+Mdi:Iconify
+Graph:Select Graph11
+Graph:Select Graph3
+Mdi:Deiconify
+Mdi:Iconify
+Graph:Select Graph3
+Graph:Select Graph11
+Mdi:Deiconify
+.frame1.mdi.mdi12.work.graph11 save -file /home/coimbasn/finfet_fault_modeling/NM_LP_latest.png -format png  -x 0 -y 0 -w 619 -h 380 -colormode color
+Graph:DSel
+Graph:Select Graph11
+Graph:DSel
+Graph itemselect AxisY(0,0) add
+# AxisY(0,0)
+ScopeSigMgr:Unload 1
+Graph11 delsignal Signal1
+Graph11 delsignal Signal0
+Graph9 delsignal Signal1
+Graph9 delsignal Signal0
+Graph3 delsignal Signal37
+Graph3 delsignal Signal36
+Graph:DSel 0
+Graph:DSel
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_45nm_SG.tr0 1 openonly
+# PF:79
+wm geometry .sigmgr._PF:79 231x341+542+228
+Graph:Select Graph11
+Graph:DSel 0
+Graph:DSel
+pf:read PF:79 v(en1)
+# WF:79:2
+Graph addsignal WF:79:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:79 v(out)
+# WF:79:3
+Graph addsignal WF:79:3 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+pf:read PF:79 v(phg)
+# WF:79:4
+Graph addsignal WF:79:4 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal2
+pf:read PF:79 v(qbd)
+# WF:79:5
+Graph addsignal WF:79:5 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal3
+pf:read PF:79 v(qd)
+# WF:79:6
+Graph addsignal WF:79:6 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal4
+pf:read PF:79 v(sense)
+# WF:79:7
+Graph addsignal WF:79:7 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal5
+pf:read PF:79 v(we)
+# WF:79:8
+Graph addsignal WF:79:8 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal6
+pf:read PF:79 v(wl1)
+# WF:79:9
+Graph addsignal WF:79:9 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal7
+Graph:DSel
+Graph:Select Graph11
+Graph:DSel
+Graph itemselect Signal6 add
+# Signal6
+Graph sigconfig {Signal6 Signal3} -region {3 3} -rgnindex {0 1}
+Graph:DSel
+Graph itemselect Signal5 add
+# Signal5
+Graph sigconfig Signal5 -region 1 -rgnindex 1
+Graph:DSel
+pf:read PF:79 v(in)
+# WF:79:11
+Graph addsignal WF:79:11 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal8
+Graph:DSel
+Graph:Select Graph11
+Graph:DSel
+Graph itemselect Signal1 add
+# Signal1
+GrMeas:AtX Graph11 Signal1 {} xyrangeVisible
+# M:0
+GrMeas:AtX Graph11 Signal1 {} xyrangeVisible
+# M:1
+Graph:DSel
+GrMeas:Select Graph11 M:1 0 1
+GrMeas:MovePoint Graph11 M:1 0 9.7999991633619n 0.014514453740382
+GrMeas:MovePoint Graph11 M:1 0 9.1172248149967n 0.013056656479408
+GrMeas:MovePoint Graph11 M:1 0 9.7999991633619n 0.014514453740382
+Graph:DSel
+GrMeas:Select Graph11 M:0 0 1
+GrMeas:MovePoint Graph11 M:0 0 17.441696027592n 83.907642240036u
+Graph:DSel
+Graph:DSel
+GrMeas:Select Graph11 M:0 0 1
+GrMeas:MoveText Graph11 M:0 0 78 28
+Graph:DSel
+Graph itemselect Signal1 add
+# Signal1
+GrMeas:AtX Graph11 Signal1 {} xyrangeVisible
+# M:2
+GrMeas:AtX Graph11 Signal1 {} xyrangeVisible
+# M:3
+Graph:DSel
+GrMeas:Select Graph11 M:3 0 1
+GrMeas:MovePoint Graph11 M:3 0 29.735564422927n 0.89984202323717
+GrMeas:MovePoint Graph11 M:3 0 30.002898558979n 0.83527783717597
+Graph:DSel
+GrMeas:Select Graph11 M:2 0 1
+GrMeas:MovePoint Graph11 M:2 0 37.939869517873n 0.89982163446429
+GrMeas:MoveText Graph11 M:2 0 77 33
+Graph:DSel
+GrMeas:Select Graph11 M:3 0 1
+GrMeas:MoveText Graph11 M:3 0 17 29
+Graph:DSel
+Graph:DSel
+Graph itemselect Signal6 add
+# Signal6
+Graph:DSel
+Graph itemselect Signal3 add
+# Signal3
+GrMeas:AtX Graph11 Signal3 {} xyrangeVisible
+# M:4
+GrMeas:AtX Graph11 Signal3 {} xyrangeVisible
+# M:5
+GrMeas:AtX Graph11 Signal3 {} xyrangeVisible
+# M:6
+GrMeas:AtX Graph11 Signal3 {} xyrangeVisible
+# M:7
+Graph:DSel
+GrMeas:Select Graph11 M:7 0 1
+GrMeas:MovePoint Graph11 M:7 0 6.9255181025616n 853.19172670243u
+GrMeas:MovePoint Graph11 M:7 0 6.6134668554466n 0.0059578346908288
+GrMeas:MovePoint Graph11 M:7 0 7.0713988650966n 0.0
+GrMeas:MovePoint Graph11 M:7 0 3.2205280518091n 0.31076724461564
+GrMeas:MovePoint Graph11 M:7 0 6.8573717816944n 0.0029528432416342
+Graph:DSel
+Graph:DSel
+GrMeas:Select Graph11 M:6 0 1
+GrMeas:MovePoint Graph11 M:6 0 21.531450398589n 45.874738981702u
+Graph:DSel
+GrMeas:Select Graph11 M:5 0 1
+Graph delsignal selected
+Graph:DSel
+GrMeas:Select Graph11 M:4 0 1
+GrMeas:MovePoint Graph11 M:4 0 25.101143516081n 0.89923075214253
+Graph:DSel
+GrMeas:Select Graph11 M:6 0 1
+GrMeas:MovePoint Graph11 M:6 0 20.02020377413n 27.446425031788u
+Graph:DSel
+GrMeas:Select Graph11 M:4 0 1
+GrMeas:MovePoint Graph11 M:4 0 26.065704186017n 0.89985888318398
+GrMeas:MoveText Graph11 M:4 0 104 54
+Graph:DSel
+GrMeas:Select Graph11 M:6 0 1
+GrMeas:MoveText Graph11 M:6 0 48 21
+Graph:DSel
+GrMeas:Select Graph11 M:7 0 1
+GrMeas:MovePoint Graph11 M:7 0 6.8598540524463n 0.0028799141694069
+GrMeas:MovePoint Graph11 M:7 0 6.8924085309733n 0.001900076795772
+Graph:DSel
+Graph:DSel
+GrMeas:Select Graph11 M:7 0 1
+GrMeas:MoveText Graph11 M:7 0 22 21
+Graph:DSel
+.frame1.mdi.mdi12.work.graph11 save -file /home/coimbasn/finfet_fault_modeling/w0r0w1r1_SG_sizing_1:1.png -format png  -x 0 -y 0 -w 619 -h 865 -colormode color
+Graph:Select Graph11
+Graph:DSel
+Graph itemselect AxisY(3,0) add
+# AxisY(3,0)
+Graph:DSel
+ScopeSigMgr:Reload 0 {{(1) sram_45nm_SG.tr0}}
+Graph:DSel
+GrMeas:Select Graph11 M:14 0 1
+GrMeas:MovePoint Graph11 M:14 0 5.9869232694754n 0.89986100047962
+Graph:DSel
+GrMeas:Select Graph11 M:12 0 1
+GrMeas:MovePoint Graph11 M:12 0 26.918277713366n 563.35747836675u
+Graph:DSel
+Graph:DSel
+GrMeas:Select Graph11 M:8 0 1
+GrMeas:MoveText Graph11 M:8 0 32 64
+Graph:DSel
+GrMeas:Select Graph11 M:11 0 1
+GrMeas:MoveText Graph11 M:11 0 -24 73
+Graph:DSel
+GrMeas:Select Graph11 M:8 0 1
+GrMeas:MovePoint Graph11 M:8 0 18.07718369464n 0.89981928191357
+Graph:DSel
+GrMeas:Select Graph11 M:9 0 1
+GrMeas:MoveText Graph11 M:9 0 -14 35
+Graph:DSel
+GrMeas:Select Graph11 M:8 0 1
+GrMeas:MoveText Graph11 M:8 0 38 36
+Graph:DSel
+Graph:DSel
+GrMeas:Select Graph11 M:8 0 1
+GrMeas:MovePoint Graph11 M:8 0 17.861544041187n 0.89981551783243
+Graph:DSel
+Graph:DSel
+GrMeas:Select Graph11 M:11 0 1
+Graph:DSel
+Graph:DSel
+GrMeas:Select Graph11 M:10 0 1
+GrMeas:MovePoint Graph11 M:10 0 37.724170566645n 61.479992071204u
+Graph:DSel
+Graph:DSel
+GrMeas:Select Graph11 M:14 0 1
+GrMeas:MovePoint Graph11 M:14 0 5.9866827840542n 0.89986100047962
+Graph:DSel
+Graph:DSel
+GrMeas:Select Graph11 M:14 0 1
+GrMeas:MoveText Graph11 M:14 0 43 54
+Graph:DSel
+.frame1.mdi.mdi12.work.graph11 save -file /home/coimbasn/finfet_fault_modeling/w1r1w0r0_SG_sizing_1:1.png -format png  -x 0 -y 0 -w 619 -h 865 -colormode color
+Graph:Select Graph11
+Graph:DSel
+Graph itemselect AxisY(3,0) add
+# AxisY(3,0)
+ScopeSigMgr:Unload 1
+Graph11 delsignal Signal9
+Graph11 delsignal Signal10
+Graph11 delsignal Signal11
+Graph11 delsignal Signal12
+Graph11 delsignal Signal13
+Graph11 delsignal Signal14
+Graph11 delsignal Signal15
+Graph11 delsignal Signal16
+Graph11 delsignal Signal17
+Graph:DSel 0
+Graph:DSel 0
+Graph:DSel 0
+Graph:DSel 0
+Graph:DSel 0
+Graph:DSel
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_45nm_SG.tr0 1 openonly
+# PF:81
+wm geometry .sigmgr._PF:81 231x341+545+254
+pf:read PF:81 v(en1)
+# WF:81:1
+Graph addsignal WF:81:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:81 v(in)
+# WF:81:2
+Graph addsignal WF:81:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+pf:read PF:81 v(out)
+# WF:81:3
+Graph addsignal WF:81:3 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal2
+pf:read PF:81 v(phg)
+# WF:81:4
+Graph addsignal WF:81:4 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal3
+pf:read PF:81 v(qbd)
+# WF:81:5
+Graph addsignal WF:81:5 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal4
+pf:read PF:81 v(qd)
+# WF:81:6
+Graph addsignal WF:81:6 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal5
+pf:read PF:81 v(sense)
+# WF:81:7
+Graph addsignal WF:81:7 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal6
+pf:read PF:81 v(we)
+# WF:81:8
+Graph addsignal WF:81:8 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal7
+pf:read PF:81 v(wl1)
+# WF:81:9
+Graph addsignal WF:81:9 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal8
+Graph:DSel
+Graph:Select Graph11
+Graph:DSel
+Graph itemselect Signal4 add
+# Signal4
+Graph sigconfig {Signal4 Signal7} -region {7 7} -rgnindex {0 1}
+Graph:DSel
+Graph:DSel
+Graph:Select Graph11
+Graph:DSel
+ScopeSigMgr:Reload 0 {{(1) sram_45nm_SG.tr0}}
+Graph:Select Graph11
+Graph:DSel
+Graph itemselect AxisY(1,0) add
+# AxisY(1,0)
+Graph:DSel
+ScopeSigMgr:Reload 0 {{(1) sram_45nm_SG.tr0}}
+Graph:Select Graph11
+Graph:DSel
+Graph itemselect AxisY(3,0) add
+# AxisY(3,0)
+Graph:DSel
+Graph itemselect Signal24 add
+# Signal24
+GrMeas:AtX Graph11 Signal24 {} xyrangeVisible
+# M:15
+GrMeas:AtX Graph11 Signal24 {} xyrangeVisible
+# M:16
+GrMeas:AtX Graph11 Signal24 {} xyrangeVisible
+# M:17
+Graph:DSel
+GrMeas:Select Graph11 M:17 0 1
+GrMeas:MovePoint Graph11 M:17 0 5.878604353142n 1.099922540801
+Graph:DSel
+Graph:DSel
+GrMeas:Select Graph11 M:17 0 1
+GrMeas:MoveText Graph11 M:17 0 41 80
+Graph:DSel
+GrMeas:Select Graph11 M:16 0 1
+GrMeas:MovePoint Graph11 M:16 0 19.37249088245n 1.0999272459025
+GrMeas:MovePoint Graph11 M:16 0 20.020147770676n 1.0999277686915
+Graph:DSel
+GrMeas:Select Graph11 M:16 0 2
+GrMeas:MoveText Graph11 M:16 0 -44 41
+Graph:DSel
+GrMeas:Select Graph11 M:15 0 1
+GrMeas:MovePoint Graph11 M:15 0 26.879806634613n 0.0020984752395732
+GrMeas:MoveText Graph11 M:15 0 54 19
+GrMeas:MovePoint Graph11 M:15 0 26.943192661868n 440.18837860505u
+Graph:DSel
+Graph:DSel
+Graph itemselect Signal21 add
+# Signal21
+GrMeas:AtX Graph11 Signal21 {} xyrangeVisible
+# M:18
+Graph:DSel
+GrMeas:Select Graph11 M:18 0 1
+GrMeas:MoveText Graph11 M:18 0 52 58
+GrMeas:MovePoint Graph11 M:18 0 19.999999704427n 0.0
+Graph delsignal selected
+Graph:DSel
+Graph itemselect Signal20 add
+# Signal20
+Graph sigconfig Signal20 -region 5 -rgnindex 1
+Graph itemselect Signal20 add
+# Signal20
+GrMeas:AtX Graph11 Signal20 {} xyrangeVisible
+# M:19
+GrMeas:AtX Graph11 Signal20 {} xyrangeVisible
+# M:20
+GrMeas:AtX Graph11 Signal20 {} xyrangeVisible
+# M:21
+GrMeas:AtX Graph11 Signal20 {} xyrangeVisible
+# M:22
+Graph:DSel
+GrMeas:Select Graph11 M:22 0 1
+GrMeas:MovePoint Graph11 M:22 0 10.087937629099n 0.99405383761771
+Graph:DSel
+GrMeas:Select Graph11 M:21 0 1
+GrMeas:MovePoint Graph11 M:21 0 17.649962991008n 1.09965670257
+GrMeas:MoveText Graph11 M:21 0 -12 73
+Graph:DSel
+GrMeas:Select Graph11 M:22 0 1
+GrMeas:MoveText Graph11 M:22 0 -19 34
+Graph:DSel
+GrMeas:Select Graph11 M:21 0 1
+GrMeas:MoveText Graph11 M:21 0 -37 64
+Graph:DSel
+GrMeas:Select Graph11 M:20 0 1
+GrMeas:MovePoint Graph11 M:20 0 30.019923609072n 0.65493208339352
+Graph:DSel
+GrMeas:Select Graph11 M:19 0 1
+GrMeas:MoveText Graph11 M:19 0 26 51
+Graph:DSel
+GrMeas:Select Graph11 M:20 0 1
+GrMeas:MoveText Graph11 M:20 0 27 37
+Graph:DSel
+GrMeas:Select Graph11 M:19 0 1
+GrMeas:MovePoint Graph11 M:19 0 37.615915889568n 104.29641512079u
+Graph:DSel
+GrMeas:Select Graph11 M:20 0 1
+GrMeas:MoveText Graph11 M:20 0 -25 46
+Graph:DSel
+GrMeas:Select Graph11 M:19 0 1
+GrMeas:MoveText Graph11 M:19 0 23 25
+GrMeas:MovePoint Graph11 M:19 0 37.191541479141n 897.89019032562u
+GrMeas:MovePoint Graph11 M:19 0 37.831654372646n 98.807130114435u
+GrMeas:MoveText Graph11 M:19 0 32 21
+Graph:DSel
+.frame1.mdi.mdi12.work.graph11 save -file /home/coimbasn/finfet_fault_modeling/w1r1w0r0_SG_sizing_1:1.png -format png  -x 0 -y 0 -w 619 -h 865 -colormode color
+Graph:Select Graph11
+Graph:DSel
+Graph itemselect AxisY(4,0) add
+# AxisY(4,0)
+Graph:DSel
+ScopeSigMgr:Reload 0 {{(1) sram_45nm_SG.tr0}}
+Graph:DSel
+GrMeas:Select Graph11 M:29 0 1
+GrMeas:MovePoint Graph11 M:29 0 6.9307066578824n 745.23578824406u
+Graph:DSel
+Graph:DSel
+GrMeas:Select Graph11 M:29 0 1
+GrMeas:MoveText Graph11 M:29 0 3 18
+Graph:DSel
+GrMeas:Select Graph11 M:27 0 1
+GrMeas:MovePoint Graph11 M:27 0 26.065170506041n 1.0997557710947
+GrMeas:MovePoint Graph11 M:27 0 26.173372473985n 1.0997962872459
+Graph:DSel
+Graph:DSel
+GrMeas:Select Graph11 M:27 0 1
+GrMeas:MoveText Graph11 M:27 0 99 81
+Graph:DSel
+GrMeas:Select Graph11 M:28 0 2
+GrMeas:MoveText Graph11 M:28 0 29 17
+Graph:DSel
+Graph:DSel
+GrMeas:Select Graph11 M:25 0 1
+GrMeas:MovePoint Graph11 M:25 0 18.077107925261n 98.807130114435u
+GrMeas:MoveText Graph11 M:25 0 8 21
+Graph:DSel
+GrMeas:Select Graph11 M:26 0 1
+GrMeas:MoveText Graph11 M:26 0 -34 62
+Graph:DSel
+GrMeas:Select Graph11 M:25 0 1
+GrMeas:MoveText Graph11 M:25 0 11 13
+GrMeas:MoveText Graph11 M:25 0 11 19
+Graph:DSel
+Graph:DSel
+GrMeas:Select Graph11 M:23 0 1
+GrMeas:MovePoint Graph11 M:23 0 40.14486057909n 0.99007149204286
+GrMeas:MovePoint Graph11 M:23 0 37.615721524639n 1.0997108112365
+GrMeas:MoveText Graph11 M:23 0 40 81
+Graph:DSel
+GrMeas:Select Graph11 M:25 0 2
+GrMeas:MoveText Graph11 M:25 0 21 18
+Graph:DSel
+Graph:DSel
+GrMeas:Select Graph11 M:24 0 1
+GrMeas:MoveText Graph11 M:24 0 1 35
+.frame1.mdi.mdi12.work.graph11 save -file /home/coimbasn/finfet_fault_modeling/w0r0w1r1_SG_sizing_1:1.png -format png  -x 0 -y 0 -w 619 -h 865 -colormode color
+Graph:DSel
+GrMeas:Select Graph11 M:29 0 1
+Graph:DSel
+ScopeSigMgr:Unload 1
+Graph11 delsignal Signal27
+Graph11 delsignal Signal28
+Graph11 delsignal Signal29
+Graph11 delsignal Signal30
+Graph11 delsignal Signal31
+Graph11 delsignal Signal32
+Graph11 delsignal Signal33
+Graph11 delsignal Signal34
+Graph11 delsignal Signal35
+Graph:DSel 0
+Graph:DSel 0
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_45nm_SG.tr0 1 openonly
+# PF:85
+wm geometry .sigmgr._PF:85 231x341+516+349
+wm geometry .sigmgr._PF:85 231x341+557+245
+pf:read PF:85 v(en1)
+# WF:85:1
+Graph addsignal WF:85:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:85 v(in)
+# WF:85:2
+Graph addsignal WF:85:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+pf:read PF:85 v(out)
+# WF:85:3
+Graph addsignal WF:85:3 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal2
+pf:read PF:85 v(phg)
+# WF:85:4
+Graph addsignal WF:85:4 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal3
+pf:read PF:85 v(qbd)
+# WF:85:5
+Graph addsignal WF:85:5 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal4
+pf:read PF:85 v(qd)
+# WF:85:6
+Graph addsignal WF:85:6 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal5
+pf:read PF:85 v(sense)
+# WF:85:7
+Graph addsignal WF:85:7 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal6
+pf:read PF:85 v(we)
+# WF:85:8
+Graph addsignal WF:85:8 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal7
+pf:read PF:85 v(wl1)
+# WF:85:9
+Graph addsignal WF:85:9 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal8
+Graph:DSel
+Graph:Select Graph11
+Graph:DSel
+Graph itemselect Signal4 add
+# Signal4
+Graph sigconfig Signal4 -region 7 -rgnindex 1
+Graph:DSel
+Graph itemselect Signal2 add
+# Signal2
+Graph sigconfig {Signal2 Signal6} -region {5 5} -rgnindex {0 1}
+Graph:DSel
+Graph:DSel
+Graph itemselect Signal7 add
+# Signal7
+Graph:DSel
+Graph itemselect Signal4 add
+# Signal4
+GrMeas:AtX Graph11 Signal4 {} xyrangeVisible
+# M:30
+GrMeas:AtX Graph11 Signal4 {} xyrangeVisible
+# M:31
+GrMeas:AtX Graph11 Signal4 {} xyrangeVisible
+# M:32
+Graph:DSel
+GrMeas:Select Graph11 M:32 0 1
+GrMeas:MovePoint Graph11 M:32 0 6.9916104143859n -926.90498250208u
+GrMeas:MoveText Graph11 M:32 0 10 25
+Graph:DSel
+GrMeas:Select Graph11 M:31 0 1
+GrMeas:MovePoint Graph11 M:31 0 20.12784241321n 48.619381484881u
+GrMeas:MoveText Graph11 M:31 0 31 30
+Graph:DSel
+GrMeas:Select Graph11 M:30 0 1
+GrMeas:MovePoint Graph11 M:30 0 26.390181611335n 1.0998770581538
+GrMeas:MoveText Graph11 M:30 0 94 72
+Graph:DSel
+Graph:DSel
+Graph:DSel
+Graph itemselect Signal2 add
+# Signal2
+GrMeas:AtX Graph11 Signal2 {} xyrangeVisible
+# M:33
+GrMeas:AtX Graph11 Signal2 {} xyrangeVisible
+# M:34
+GrMeas:AtX Graph11 Signal2 {} xyrangeVisible
+# M:35
+GrMeas:AtX Graph11 Signal2 {} xyrangeVisible
+# M:36
+Graph:DSel
+GrMeas:Select Graph11 M:36 0 1
+GrMeas:MovePoint Graph11 M:36 0 10.003645841802n 0.59408649583234
+GrMeas:MoveText Graph11 M:36 0 -3 42
+Graph:DSel
+Graph:DSel
+GrMeas:Select Graph11 M:35 0 1
+GrMeas:MovePoint Graph11 M:35 0 17.969146442738n 98.022946542099u
+GrMeas:MoveText Graph11 M:35 0 46 20
+Graph:DSel
+Graph:DSel
+GrMeas:Select Graph11 M:34 0 1
+GrMeas:MovePoint Graph11 M:34 0 29.799998044209n 1.0997515887823
+GrMeas:MovePoint Graph11 M:34 0 29.881133872142n 1.0925927769504
+GrMeas:MoveText Graph11 M:34 0 36 61
+Graph:DSel
+GrMeas:Select Graph11 M:33 0 1
+GrMeas:MovePoint Graph11 M:33 0 39.342914174388n 1.0997100270529
+Graph:DSel
+GrMeas:Select Graph11 M:34 0 1
+GrMeas:MoveText Graph11 M:34 0 -10 27
+GrMeas:MovePoint Graph11 M:34 0 29.881133872142n 1.0925927769504
+GrMeas:MovePoint Graph11 M:34 0 29.735528185397n 1.0997523729658
+GrMeas:MovePoint Graph11 M:34 0 30.061886667914n 0.9958088404526
+Graph:DSel
+Graph:DSel
+GrMeas:Select Graph11 M:33 0 1
+GrMeas:MoveText Graph11 M:33 0 33 61
+GrMeas:MovePoint Graph11 M:33 0 37.723627003707n 1.0997068903186
+GrMeas:MoveText Graph11 M:33 0 48 62
+.frame1.mdi.mdi12.work.graph11 save -file /home/coimbasn/finfet_fault_modeling/w0r0w1r1_LP_sizing_1:1.png -format png  -x 0 -y 0 -w 619 -h 865 -colormode color
+Graph:DSel
+Graph:Select Graph11
+Graph:DSel
+Graph:DSel
+Graph:DSel
+Graph itemselect AxisY(5,0) add
+# AxisY(5,0)
+Graph:DSel
+ScopeSigMgr:Unload 1
+Graph11 delsignal Signal0
+Graph11 delsignal Signal1
+Graph11 delsignal Signal2
+Graph11 delsignal Signal3
+Graph11 delsignal Signal4
+Graph11 delsignal Signal5
+Graph11 delsignal Signal6
+Graph11 delsignal Signal7
+Graph11 delsignal Signal8
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/sram_45nm_LP.tr0 1 openonly
+# PF:86
+wm geometry .sigmgr._PF:86 231x341+557+253
+pf:read PF:86 v(en1)
+# WF:86:1
+Graph addsignal WF:86:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:86 v(in)
+# WF:86:2
+Graph addsignal WF:86:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+pf:read PF:86 v(out)
+# WF:86:3
+Graph addsignal WF:86:3 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal2
+pf:read PF:86 v(phg)
+# WF:86:4
+Graph addsignal WF:86:4 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal3
+pf:read PF:86 v(qbd)
+# WF:86:5
+Graph addsignal WF:86:5 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal4
+pf:read PF:86 v(qd)
+# WF:86:6
+Graph addsignal WF:86:6 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal5
+pf:read PF:86 v(sense)
+# WF:86:7
+Graph addsignal WF:86:7 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal6
+pf:read PF:86 v(we)
+# WF:86:8
+Graph addsignal WF:86:8 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal7
+pf:read PF:86 v(wl1)
+# WF:86:9
+Graph addsignal WF:86:9 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal8
+Graph:DSel
+Graph:Select Graph11
+Graph:DSel
+Graph itemselect Signal7 add
+# Signal7
+Graph:DSel
+Graph itemselect Signal4 add
+# Signal4
+Graph sigconfig Signal4 -region 7 -rgnindex 1
+Graph:DSel
+Graph itemselect Signal6 add
+# Signal6
+Graph sigconfig Signal6 -region 2 -rgnindex 1
+Graph:DSel
+Graph itemselect Signal4 add
+# Signal4
+GrMeas:AtX Graph11 Signal4 {} xyrangeVisible
+# M:37
+GrMeas:AtX Graph11 Signal4 {} xyrangeVisible
+# M:38
+GrMeas:AtX Graph11 Signal4 {} xyrangeVisible
+# M:39
+Graph:DSel
+GrMeas:Select Graph11 M:39 0 1
+GrMeas:MovePoint Graph11 M:39 0 5.2185558770818n 1.0980087407928
+GrMeas:MovePoint Graph11 M:39 0 5.9171067279431n 1.1000123298201
+GrMeas:MoveText Graph11 M:39 0 2 61
+Graph:DSel
+GrMeas:Select Graph11 M:38 0 1
+GrMeas:MovePoint Graph11 M:38 0 25.494590842476n 0.15826157601829
+Graph:DSel
+GrMeas:Select Graph11 M:37 0 1
+GrMeas:MovePoint Graph11 M:37 0 20.020101650184n 1.0999927252308
+GrMeas:MoveText Graph11 M:37 0 -23 30
+Graph:DSel
+GrMeas:Select Graph11 M:38 0 1
+GrMeas:MovePoint Graph11 M:38 0 26.999999930409n -0.0045478726277672
+GrMeas:MovePoint Graph11 M:38 0 26.919186945917n 0.025636529346834
+GrMeas:MoveText Graph11 M:38 0 38 22
+Graph:DSel
+Graph:DSel
+Graph itemselect Signal6 add
+# Signal6
+Graph:DSel
+Graph itemselect Signal2 add
+# Signal2
+GrMeas:AtX Graph11 Signal2 {} xyrangeVisible
+# M:40
+GrMeas:AtX Graph11 Signal2 {} xyrangeVisible
+# M:41
+GrMeas:AtX Graph11 Signal2 {} xyrangeVisible
+# M:42
+GrMeas:AtX Graph11 Signal2 {} xyrangeVisible
+# M:43
+Graph:DSel
+GrMeas:Select Graph11 M:43 0 1
+GrMeas:MovePoint Graph11 M:43 0 9.9327718232802n 1.0648569881804
+GrMeas:MoveText Graph11 M:43 0 5 30
+Graph:DSel
+GrMeas:Select Graph11 M:42 0 1
+GrMeas:MovePoint Graph11 M:42 0 17.32155873525n 1.0999648867139
+GrMeas:MoveText Graph11 M:42 0 -22 65
+GrMeas:MovePoint Graph11 M:42 0 17.321736628576n 1.0999648867139
+Graph:DSel
+Graph:DSel
+GrMeas:Select Graph11 M:41 0 1
+GrMeas:MovePoint Graph11 M:41 0 29.99999626232n 1.0996120041064
+Graph:DSel
+GrMeas:Select Graph11 M:40 0 1
+GrMeas:MovePoint Graph11 M:40 0 29.799998044209n 0.068005967760191
+GrMeas:MovePoint Graph11 M:40 0 40.961898267553n 1.0998205969366
+Graph:DSel
+GrMeas:Select Graph11 M:41 0 1
+GrMeas:MoveText Graph11 M:41 0 -19 65
+Graph:DSel
+GrMeas:Select Graph11 M:40 0 1
+GrMeas:MovePoint Graph11 M:40 0 37.399854563048n 9.4102028680415u
+GrMeas:MoveText Graph11 M:40 0 38 23
+Graph:DSel
+.frame1.mdi.mdi12.work.graph11 save -file /home/coimbasn/finfet_fault_modeling/w1r1w0r0_LP_sizing_1:1.png -format png  -x 0 -y 0 -w 619 -h 865 -colormode color
+Graph:DSel
+Graph:Select Graph11
+Graph:DSel
+ScopeSigMgr:Reload 0 {{(1) sram_45nm_LP.tr0}}
+Graph:DSel
+GrMeas:Select Graph11 M:46 0 1
+GrMeas:MoveText Graph11 M:46 0 36 22
+GrMeas:MovePoint Graph11 M:46 0 17.321453316983n 8.3646247715924u
+GrMeas:MoveText Graph11 M:46 0 39 18
+Graph:DSel
+Graph:DSel
+GrMeas:Select Graph11 M:47 0 1
+GrMeas:MoveText Graph11 M:47 0 -25 69
+Graph:DSel
+Graph:DSel
+GrMeas:Select Graph11 M:45 0 1
+GrMeas:MoveText Graph11 M:45 0 -11 30
+Graph:DSel
+GrMeas:Select Graph11 M:44 0 1
+GrMeas:MovePoint Graph11 M:44 0 37.291919435092n 1.099975865284
+GrMeas:MoveText Graph11 M:44 0 67 31
+Graph:DSel
+Graph:DSel
+GrMeas:Select Graph11 M:50 0 1
+GrMeas:MovePoint Graph11 M:50 0 6.9639397665021n 962.45463778135u
+Graph:DSel
+Graph:DSel
+GrMeas:Select Graph11 M:50 0 1
+GrMeas:MoveText Graph11 M:50 0 7 21
+Graph:DSel
+Graph:DSel
+GrMeas:Select Graph11 M:48 0 1
+GrMeas:MoveText Graph11 M:48 0 12 19
+Graph:DSel
+GrMeas:Select Graph11 M:49 0 1
+GrMeas:MoveText Graph11 M:49 0 72 82
+GrMeas:MovePoint Graph11 M:49 0 26.177101645174n 1.0997084586858
+Graph:DSel
+.frame1.mdi.mdi12.work.graph11 save -file /home/coimbasn/finfet_fault_modeling/w0r0w1r1_LP_sizing_1:1.png -format png  -x 0 -y 0 -w 619 -h 865 -colormode color
+Graph:DSel
+Graph:Select Graph11
+Graph:DSel
+.frame1.mdi.mdi12.work.graph11 save -file /home/coimbasn/finfet_fault_modeling/w0r0w1r1_LP_sizing_1to1.png -format png  -x 0 -y 0 -w 619 -h 865 -colormode color
+ScopeSigMgr:loadpffile {/home/coimbasn/finfet_fault_modeling/w0r0w1r1_LP_sizing_1:1.png /home/coimbasn/finfet_fault_modeling/w0r0w1r1_LP_sizing_1to1.png /home/coimbasn/finfet_fault_modeling/w0r0w1r1_SG_sizing_1to1.PNG /home/coimbasn/finfet_fault_modeling/w1r1w0r0_LP_sizing_1:1.png /home/coimbasn/finfet_fault_modeling/w1r1w0r0_SG_sizing_1:1.png} 1 openonly
+# {} {} {} {} {}
+Graph:DSel
+Graph:Select Graph11
+Graph:DSel
+ScopeSigMgr:loadpffile /home/coimbasn/finfet_fault_modeling/w0r0w1r1_LP_sizing_1:1.png 1 openonly
+# {}
+Graph:DSel
+Graph:Select Graph11
+Graph:DSel
+Graph:DSel
+Graph:Select Graph11
+ScopeSigMgr:Unload 1
+Graph11 delsignal Signal9
+Graph11 delsignal Signal10
+Graph11 delsignal Signal11
+Graph11 delsignal Signal12
+Graph11 delsignal Signal13
+Graph11 delsignal Signal14
+Graph11 delsignal Signal15
+Graph11 delsignal Signal16
+Graph11 delsignal Signal17
+Graph:DSel
+Mdi:ArrangeIcons
+wm geometry . 631x504+212+247
+Mdi:ArrangeIcons
+wm geometry . 631x504+210+70

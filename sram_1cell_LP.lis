@@ -1,0 +1,107 @@
+ ****** HSPICE -- G-2012.06 32-BIT (May 27 2012) sparcOS5 ******                
+  Copyright (C) 2012 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: sram_1cell_LP.sp                                                  
+  Command line options: sram_1cell_LP.sp -o sram_1cell_LP.lis
+ lic: No 'setenv LM_LICENSE_FILE' in current environment' 
+ lic:  
+ lic: FLEXlm: v10.8 
+ lic: USER:   coimbasn             HOSTNAME: everest.rhod.uc.edu 
+ lic: HOSTID: 8300e27a             PID:      2568 
+ lic: Using FLEXlm license file: 
+ lic: 27000@olympus.ececs.engr.uc.edu 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 20-jun-2013/2011.09 
+ lic: 1(in_use)/50(total) FLOATING license(s) on SERVER olympus.ececs.engr.uc.ed
+ lic:   
+ Init: read install configuration file: /opt/CAD/Synopsys/G-2012.06/hspice/hspice/meta.cfg
+  **info** (sram_1cell_LP.sp:78) DC voltage reset to initial transient source value              in source        0:vwe                 new dc=  0.0000D+00
+ Warning: Pd = 0 is less than W.
+
+ Warning: Ps = 0 is less than W.
+
+ Warning: Pd = 0 is less than W.
+
+ Warning: Ps = 0 is less than W.
+
+ Warning: Pd = 0 is less than W.
+
+ Warning: Ps = 0 is less than W.
+
+ Warning: Pd = 0 is less than W.
+
+ Warning: Ps = 0 is less than W.
+
+ Warning: Pd = 0 is less than W.
+
+ Warning: Ps = 0 is less than W.
+
+  
+
+ **warning** the following singular supplies were terminated to 1 meg resistor 
+   supply       node1            node2
+  vwe                     0:we               defined in subckt 0                     0:vss              defined in subckt 0               
+      
+
+ **warning** an operating point request at  time=0 and a transient uic
+     results in no operating point
+
+
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2         
+  Opening plot unit= 15
+ file=sram_1cell_LP.pa0                                                        
+
+
+          ***** job concluded
+ ****** HSPICE -- G-2012.06 32-BIT (May 27 2012) sparcOS5 ******                
+ ******  
+ *one 6t sram cell to measure leakage current
+
+  ******  job statistics summary tnom=  25.000 temp=  25.000 *****
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     2
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =      55 # elements   =      47
+  # resistors   =       4 # capacitors =       5 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =      12
+  # cccs        =       3 # ccvs       =       0 # volt_srcs   =      11
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =      12 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1           0
+  transient          0.59         251         112          50 rev=         3
+  readin             0.10
+  errchk             0.11
+  setup              0.00
+  output             0.00
+
+
+           peak memory used         77.74 megabytes
+           total cpu time            0.82 seconds
+           total elapsed time        1.32 seconds
+           job started at     16:29:53 01/10/2013
+           job ended   at     16:29:55 01/10/2013
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.26(s)

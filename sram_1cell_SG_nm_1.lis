@@ -1,0 +1,230 @@
+ ****** HSPICE -- G-2012.06 32-BIT (May 27 2012) sparcOS5 ******                
+  Copyright (C) 2012 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: sram_1cell_SG_nm_1.sp                                             
+  Command line options: sram_1cell_SG_nm_1.sp -o sram_1cell_SG_nm_1.lis
+ lic: No 'setenv LM_LICENSE_FILE' in current environment' 
+ lic:  
+ lic: FLEXlm: v10.8 
+ lic: USER:   coimbasn             HOSTNAME: everest.rhod.uc.edu 
+ lic: HOSTID: 8300e27a             PID:      26407 
+ lic: Using FLEXlm license file: 
+ lic: 27000@olympus.ececs.engr.uc.edu 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 20-jun-2013/2011.09 
+ lic: 1(in_use)/50(total) FLOATING license(s) on SERVER olympus.ececs.engr.uc.ed
+ lic:   
+ Init: read install configuration file: /opt/CAD/Synopsys/G-2012.06/hspice/hspice/meta.cfg
+ Warning: Pd = 0 is less than W.
+
+ Warning: Ps = 0 is less than W.
+
+ Warning: Pd = 0 is less than W.
+
+ Warning: Ps = 0 is less than W.
+
+ Warning: Pd = 0 is less than W.
+
+ Warning: Ps = 0 is less than W.
+
+ Warning: Pd = 0 is less than W.
+
+ Warning: Ps = 0 is less than W.
+
+  
+      
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2         
+  Opening plot unit= 15
+ file=sram_1cell_SG_nm_1.pa0                                                   
+
+
+ **info** rebuilding matrix with pivot option
+
+
+ **info** rebuilding matrix without pivot option
+
+ ******  
+ *one 6t sram cell to measure leakage current
+
+  ******  dc transfer curves tnom=  25.000 temp=  25.000 *****
+x
+
+      qd        voltage      voltage    
+                    qd           qbd    
+    0.          323.7100m    323.7100m  
+  100.00000m    323.7100m    323.7100m  
+  200.00000m    323.7100m    323.7100m  
+  300.00000m    323.7100m    323.7100m  
+  400.00000m    323.7100m    323.7100m  
+  500.00000m    323.7100m    323.7100m  
+  600.00000m    323.7100m    323.7100m  
+  700.00000m    323.7100m    323.7100m  
+  800.00000m    323.7100m    323.7100m  
+  900.00000m    323.7100m    323.7100m  
+y
+-----------------------------------------------
+
+ **info** rebuilding matrix with pivot option
+
+
+ **info** rebuilding matrix without pivot option
+
+ ****** HSPICE -- G-2012.06 32-BIT (May 27 2012) sparcOS5 ******                
+ ******  
+ *one 6t sram cell to measure leakage current
+
+  ******  operating point information tnom=  25.000 temp=  25.000 *****
+ ***** operating point status is all       simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:qbd     = 323.7100m 0:qd      = 323.7100m 0:vdd     = 900.0000m
+ +0:vss     =   0.      1:nvgb1   = 373.0698m 1:nvgf1   = 373.0698m
+ +2:n1      =   1.0000  2:pvgb1   = 300.8551m 2:pvgf1   = 300.8551m
+ +3:nvgb1   = 373.0698m 3:nvgf1   = 373.0698m 4:n1      =   1.0000 
+ +4:pvgb1   = 300.8551m 4:pvgf1   = 300.8551m
+
+
+ **** voltage sources
+
+ subckt                         xinvl2     xinvr2    
+ element  0:vvdd     0:vvss     2:vvdd     4:vvdd    
+  volts    900.0000m    0.         1.0000     1.0000 
+  current  -68.8993u   68.8993u    0.         0.     
+  power     62.0094u    0.         0.         0.     
+
+     total voltage source power dissipation=   62.0094u       watts
+
+
+
+ **** voltage-controlled voltage sources
+
+
+ subckt     xinvl1     xinvl1     xinvl2     xinvl2     xinvr1     xinvr1  
+ element  1:en1      1:en2      2:ep1      2:ep2      3:en1      3:en2     
+  volts    -49.3598m  -49.3598m   22.8549m   22.8549m  -49.3598m  -49.3598m
+  current    0.         0.         0.         0.         0.         0.     
+
+
+
+ subckt     xinvr2     xinvr2  
+ element  4:ep1      4:ep2     
+  volts     22.8549m   22.8549m
+  current    0.         0.     
+
+
+
+
+
+ **** mosfets
+
+
+ subckt   xinvl1     xinvl1     xinvl2     xinvl2     xinvr1     xinvr1    
+ element  1:mn1      1:mn2      2:mp1      2:mp2      3:mn1      3:mn2     
+ model    1:nmos1    1:nmos2    2:pmos1    2:pmos2    1:nmos1    1:nmos2   
+ region     Saturati   Saturati   Saturati   Saturati   Saturati   Saturati
+  id        17.2248u   17.2248u  -17.2248u  -17.2248u   17.2248u   17.2248u
+  ibs        0.         0.         0.         0.         0.         0.     
+  ibd        0.         0.         0.         0.         0.         0.     
+  vgs      373.0698m  373.0698m -599.1449m -599.1449m  373.0698m  373.0698m
+  vds      323.7100m  323.7100m -576.2900m -576.2900m  323.7100m  323.7100m
+  ves        0.         0.       100.0000m  100.0000m    0.         0.     
+  vps        0.         0.      -900.0000m -900.0000m    0.         0.     
+  vbs        0.         0.      -900.0000m -900.0000m    0.         0.     
+  vth      297.9086m  297.9086m -225.8675m -225.8675m  297.9086m  297.9086m
+  vdsat     91.1595m   91.1595m -329.5076m -329.5076m   91.1595m   91.1595m
+  beta       0.         0.         0.         0.         0.         0.     
+  gam eff    0.         0.         0.         0.         0.         0.     
+  gm       165.1364u  165.1364u   44.8275u   44.8275u  165.1364u  165.1364u
+  gds       28.9861u   28.9861u    9.5892u    9.5892u   28.9861u   28.9861u
+  gmb        0.         0.         0.         0.         0.         0.     
+  cdtot     75.0449a   75.0449a   44.7064a   44.7064a   75.0449a   75.0449a
+  cgtot    224.9836a  224.9836a  128.6374a  128.6374a  224.9836a  224.9836a
+  cstot    152.6296a  152.6296a   85.9396a   85.9396a  152.6296a  152.6296a
+  cbtot      0.         0.         0.         0.         0.         0.     
+  cgs      152.8892a  152.8892a   85.9345a   85.9345a  152.8892a  152.8892a
+  cgd       72.0944a   72.0944a   42.7029a   42.7029a   72.0944a   72.0944a
+
+
+
+ subckt   xinvr2     xinvr2    
+ element  4:mp1      4:mp2     
+ model    2:pmos1    2:pmos2   
+ region     Saturati   Saturati
+  id       -17.2248u  -17.2248u
+  ibs        0.         0.     
+  ibd        0.         0.     
+  vgs     -599.1449m -599.1449m
+  vds     -576.2900m -576.2900m
+  ves      100.0000m  100.0000m
+  vps     -900.0000m -900.0000m
+  vbs     -900.0000m -900.0000m
+  vth     -225.8675m -225.8675m
+  vdsat   -329.5076m -329.5076m
+  beta       0.         0.     
+  gam eff    0.         0.     
+  gm        44.8275u   44.8275u
+  gds        9.5892u    9.5892u
+  gmb        0.         0.     
+  cdtot     44.7064a   44.7064a
+  cgtot    128.6374a  128.6374a
+  cstot     85.9396a   85.9396a
+  cbtot      0.         0.     
+  cgs       85.9345a   85.9345a
+  cgd       42.7029a   42.7029a
+
+
+
+
+          ***** job concluded
+ ****** HSPICE -- G-2012.06 32-BIT (May 27 2012) sparcOS5 ******                
+ ******  
+ *one 6t sram cell to measure leakage current
+
+  ******  job statistics summary tnom=  25.000 temp=  25.000 *****
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     2
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =      31 # elements   =      20
+  # resistors   =       0 # capacitors =       0 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       8
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       4
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =       8 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.05           1           8
+  dc sweep           0.13          10          26
+  readin             0.08
+  errchk             0.07
+  setup              0.00
+  output             0.00
+
+
+           peak memory used         77.73 megabytes
+           total cpu time            0.32 seconds
+           total elapsed time        0.84 seconds
+           job started at     16:49:47 01/12/2013
+           job ended   at     16:49:48 01/12/2013
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.28(s)

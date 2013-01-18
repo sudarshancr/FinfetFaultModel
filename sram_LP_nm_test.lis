@@ -1,0 +1,271 @@
+ ****** HSPICE -- G-2012.06 32-BIT (May 27 2012) sparcOS5 ******                
+  Copyright (C) 2012 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: sram_LP_nm_test.sp                                                
+  Command line options: sram_LP_nm_test.sp -o sram_LP_nm_test.lis
+ lic: No 'setenv LM_LICENSE_FILE' in current environment' 
+ lic:  
+ lic: FLEXlm: v10.8 
+ lic: USER:   coimbasn             HOSTNAME: everest.rhod.uc.edu 
+ lic: HOSTID: 8300e27a             PID:      27250 
+ lic: Using FLEXlm license file: 
+ lic: 27000@olympus.ececs.engr.uc.edu 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 20-jun-2013/2011.09 
+ lic: 1(in_use)/50(total) FLOATING license(s) on SERVER olympus.ececs.engr.uc.ed
+ lic:   
+ Init: read install configuration file: /opt/CAD/Synopsys/G-2012.06/hspice/hspice/meta.cfg
+  **warning** (sram_LP_nm_test.sp:37) No independent source value specified. Reset to zero.
+ Warning: Pd = 0 is less than W.
+
+ Warning: Ps = 0 is less than W.
+
+ Warning: Pd = 0 is less than W.
+
+ Warning: Ps = 0 is less than W.
+
+ Warning: Pd = 0 is less than W.
+
+ Warning: Ps = 0 is less than W.
+
+ Warning: Pd = 0 is less than W.
+
+ Warning: Ps = 0 is less than W.
+
+  
+      
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2         
+  Opening plot unit= 15
+ file=sram_LP_nm_test.pa0                                                      
+
+
+ **info** rebuilding matrix with pivot option
+
+
+ **info** rebuilding matrix without pivot option
+
+ ******  
+ * hw 6, problem 1, determination of snm graphically
+
+  ******  dc transfer curves tnom=  25.000 temp=  25.000 *****
+
+ **info** rebuilding matrix with pivot option
+
+
+ **info** rebuilding matrix without pivot option
+
+ ******  
+ * hw 6, problem 1, determination of snm graphically
+
+  ******  dc transfer curves tnom=  25.000 temp=  25.000 *****
+x
+
+        volt    voltage      voltage    
+                   vout1        vout2   
+    0.            1.1000       1.1000   
+   10.00000m      1.1000       1.1000   
+   20.00000m      1.1000       1.1000   
+   30.00000m      1.1000       1.1000   
+   40.00000m      1.1000       1.1000   
+   50.00000m      1.1000       1.1000   
+   60.00000m      1.1000       1.0999   
+   70.00000m      1.1000       1.0999   
+   80.00000m      1.1000       1.0999   
+   90.00000m      1.1000       1.0999   
+  100.00000m      1.1000       1.0998   
+  110.00000m      1.1000       1.0997   
+  120.00000m      1.1000       1.0996   
+  130.00000m      1.1000       1.0995   
+  140.00000m      1.1000       1.0993   
+  150.00000m      1.1000       1.0991   
+  160.00000m      1.1000       1.0987   
+  170.00000m      1.1000       1.0983   
+  180.00000m      1.1000       1.0977   
+  190.00000m      1.1000       1.0969   
+  200.00000m      1.1000       1.0959   
+  210.00000m      1.1000       1.0945   
+  220.00000m      1.1000       1.0928   
+  230.00000m      1.1000       1.0906   
+  240.00000m      1.1000       1.0877   
+  250.00000m      1.1000       1.0841   
+  260.00000m      1.1000       1.0796   
+  270.00000m      1.1000       1.0741   
+  280.00000m      1.1000       1.0674   
+  290.00000m      1.1000       1.0594   
+  300.00000m      1.1000       1.0500   
+  310.00000m      1.1000       1.0390   
+  320.00000m      1.1000       1.0264   
+  330.00000m      1.1000       1.0121   
+  340.00000m      1.1000     996.2378m  
+  350.00000m      1.1000     978.7412m  
+  360.00000m      1.1000     959.6580m  
+  370.00000m      1.1000     938.9884m  
+  380.00000m      1.1000     916.6738m  
+  390.00000m      1.1000     892.5732m  
+  400.00000m      1.1000     866.3724m  
+  410.00000m      1.1000     837.4853m  
+  420.00000m      1.1000     804.9280m  
+  430.00000m      1.1000     767.3305m  
+  440.00000m      1.1000     723.6515m  
+  450.00000m      1.1000     674.5241m  
+  460.00000m      1.1000     622.0636m  
+  470.00000m      1.1000     568.2589m  
+  480.00000m      1.1000     514.3022m  
+  490.00000m      1.1000     460.7777m  
+  500.00000m      1.1000     407.9393m  
+  510.00000m      1.1000     355.8848m  
+  520.00000m      1.1000     304.6634m  
+  530.00000m      1.1000     254.4034m  
+  540.00000m      1.1000     205.8502m  
+  550.00000m      1.1000     165.3606m  
+  560.00000m      1.1000     143.9313m  
+  570.00000m      1.1000     130.2900m  
+  580.00000m      1.1000     119.5776m  
+  590.00000m      1.1000     110.5394m  
+  600.00000m      1.1000     102.6107m  
+  610.00000m      1.1000      95.4720m  
+  620.00000m      1.1000      88.9220m  
+  630.00000m      1.1000      82.8252m  
+  640.00000m      1.1000      77.0872m  
+  650.00000m      1.1000      71.6404m  
+  660.00000m      1.1000      66.4363m  
+  670.00000m      1.1000      61.4402m  
+  680.00000m      1.1000      56.6284m  
+  690.00000m      1.1000      51.9858m  
+  700.00000m      1.1000      47.5045m  
+  710.00000m      1.1000      43.1826m  
+  720.00000m      1.1000      39.0239m  
+  730.00000m      1.1000      35.0361m  
+  740.00000m      1.1000      31.2311m  
+  750.00000m      1.1000      27.6231m  
+  760.00000m      1.1000      24.2277m  
+  770.00000m      1.1000      21.0611m  
+  780.00000m      1.1000      18.1377m  
+  790.00000m      1.1000      15.4709m  
+  800.00000m      1.1000      13.0698m  
+  810.00000m      1.1000      10.9357m  
+  820.00000m      1.1000       9.0639m  
+  830.00000m      1.1000       7.4438m  
+  840.00000m      1.1000       6.0598m  
+  850.00000m      1.1000       4.8924m  
+  860.00000m      1.1000       3.9193m  
+  870.00000m      1.1000       3.1169m  
+  880.00000m      1.1000       2.4617m  
+  890.00000m      1.1000       1.9313m  
+  900.00000m      1.1000       1.5054m  
+  910.00000m      1.1000       1.1662m  
+  920.00000m      1.1000     898.2933u  
+  930.00000m      1.1000     688.2894u  
+  940.00000m      1.1000     524.8080u  
+  950.00000m      1.1000     398.3241u  
+  960.00000m      1.1000     301.0088u  
+  970.00000m      1.1000     226.5205u  
+  980.00000m      1.1000     169.7826u  
+  990.00000m      1.1000     126.7693u  
+    1.00000       1.1000      94.3121u  
+    1.01000       1.1000      69.9317u  
+    1.02000       1.1000      51.6985u  
+    1.03000       1.1000      38.1187u  
+    1.04000       1.1000      28.0409u  
+    1.05000       1.1000      20.5835u  
+    1.06000       1.1000      15.0819u  
+    1.07000       1.1000      11.0350u  
+    1.08000       1.1000       8.0650u  
+    1.09000       1.1000       5.8894u  
+    1.10000       1.1000       4.2983u  
+    1.11000       1.1000       3.1361u  
+    1.12000       1.1000       2.2880u  
+    1.13000       1.1000       1.6697u  
+    1.14000       1.1000       1.2192u  
+    1.15000       1.1000     891.0295n  
+    1.16000       1.1000     652.0117n  
+    1.17000       1.1000       0.       
+    1.18000       1.1000       0.       
+    1.19000       1.1000       0.       
+    1.20000       1.1000       0.       
+    1.21000       1.1000       0.       
+    1.22000       1.1000       0.       
+    1.23000       1.1000       0.       
+    1.24000       1.1000       0.       
+    1.25000       1.1000       0.       
+    1.26000       1.1000       0.       
+    1.27000       1.1000       0.       
+    1.28000       1.1000       0.       
+    1.29000       1.1000       0.       
+    1.30000       1.1000       0.       
+    1.31000       1.1000       0.       
+    1.32000       1.1000       0.       
+    1.33000       1.1000       0.       
+    1.34000       1.1000       0.       
+    1.35000       1.1000       0.       
+    1.36000       1.1000       0.       
+    1.37000       1.1000       0.       
+    1.38000       1.1000       0.       
+    1.39000       1.1000       0.       
+    1.40000       1.1000       0.       
+    1.41000       1.1000       0.       
+    1.42000       1.1000       0.       
+    1.43000       1.1000       0.       
+    1.44000       1.1000       0.       
+    1.45000       1.1000       0.       
+    1.46000       1.1000       0.       
+    1.47000       1.1000       0.       
+    1.48000       1.1000       0.       
+    1.49000       1.1000       0.       
+    1.50000       1.1000       0.       
+y
+-----------------------------------------------
+
+          ***** job concluded
+ ****** HSPICE -- G-2012.06 32-BIT (May 27 2012) sparcOS5 ******                
+ ******  
+ * hw 6, problem 1, determination of snm graphically
+
+  ******  job statistics summary tnom=  25.000 temp=  25.000 *****
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     2
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =      34 # elements   =      23
+  # resistors   =       0 # capacitors =       0 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       8
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       7
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =       8 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1           0
+  dc sweep           2.57         151         718
+  readin             0.09
+  errchk             0.07
+  setup              0.00
+  output             0.01
+
+
+           peak memory used         77.69 megabytes
+           total cpu time            2.75 seconds
+           total elapsed time        3.45 seconds
+           job started at     15:27:47 01/14/2013
+           job ended   at     15:27:51 01/14/2013
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.30(s)

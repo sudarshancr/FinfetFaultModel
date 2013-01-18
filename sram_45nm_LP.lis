@@ -1,0 +1,103 @@
+ ****** HSPICE -- G-2012.06 32-BIT (May 27 2012) sparcOS5 ******                
+  Copyright (C) 2012 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: sram_45nm_LP.sp                                                   
+  Command line options: sram_45nm_LP.sp -o sram_45nm_LP.lis
+ lic: No 'setenv LM_LICENSE_FILE' in current environment' 
+ lic:  
+ lic: FLEXlm: v10.8 
+ lic: USER:   coimbasn             HOSTNAME: everest.rhod.uc.edu 
+ lic: HOSTID: 8300e27a             PID:      27494 
+ lic: Using FLEXlm license file: 
+ lic: 27000@olympus.ececs.engr.uc.edu 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 20-jun-2013/2011.09 
+ lic: 1(in_use)/50(total) FLOATING license(s) on SERVER olympus.ececs.engr.uc.ed
+ lic:   
+ Init: read install configuration file: /opt/CAD/Synopsys/G-2012.06/hspice/hspice/meta.cfg
+  **info** (sram_45nm_LP.sp:180) DC voltage reset to initial transient source value              in source        0:ven1                new dc=  0.0000D+00
+ Warning: Pd = 0 is less than W.
+
+ Warning: Ps = 0 is less than W.
+
+ Warning: Pd = 0 is less than W.
+
+ Warning: Ps = 0 is less than W.
+
+ Warning: Pd = 0 is less than W.
+
+ Warning: Ps = 0 is less than W.
+
+ Warning: Pd = 0 is less than W.
+
+ Warning: Ps = 0 is less than W.
+
+ Warning: Pd = 0 is less than W.
+
+ Warning: Ps = 0 is less than W.
+
+  
+      
+
+ **warning** an operating point request at  time=0 and a transient uic
+     results in no operating point
+
+
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2         
+  Opening plot unit= 15
+ file=sram_45nm_LP.pa0                                                         
+
+
+          ***** job concluded
+ ****** HSPICE -- G-2012.06 32-BIT (May 27 2012) sparcOS5 ******                
+ ******  
+ *sram full electrical schematic by rathna keerthi
+
+  ******  job statistics summary tnom=  25.000 temp=  25.000 *****
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     2
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =     251 # elements   =     169
+  # resistors   =       0 # capacitors =       2 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =      70
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =      27
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =      70 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1           0
+  transient         30.75         451        1011         333 rev=        20
+  readin             0.20
+  errchk             0.54
+  setup              0.01
+  output             0.00
+
+
+           peak memory used         78.66 megabytes
+           total cpu time           31.58 seconds
+           total elapsed time       33.72 seconds
+           job started at     16:31:22 01/14/2013
+           job ended   at     16:31:55 01/14/2013
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        1.78(s)

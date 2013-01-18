@@ -1,0 +1,4 @@
+$DATA1 SOURCE='HSPICE' VERSION='G-2012.06 32-BIT'
+.TITLE '* hw 6, problem 1, determination of snm graphically'
+ maxvd            snm              temper           alter#            
+    0.4961           0.3508          25.0000        1                 

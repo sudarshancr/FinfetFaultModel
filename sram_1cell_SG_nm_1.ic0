@@ -1,0 +1,27 @@
+* "simulator" "HSPICE" 
+* "version" "G-2012.06 32-BIT"
+* "format" "HSP"
+* "rundate" "16:49:47 01/12/2013 "
+* "netlist" "sram_1cell_SG_nm_1.sp "
+* "runtitle" "*one 6t sram cell to measure leakage current"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ qbd = 323.7100m       
++ qd = 323.7100m       
++ vdd = 900.0000m       
++ vss =   0.            
++ xinvl1.nvgb1 = 373.0698m       
++ xinvl1.nvgf1 = 373.0698m       
++ xinvl2.n1 =   1.0000        
++ xinvl2.pvgb1 = 300.8551m       
++ xinvl2.pvgf1 = 300.8551m       
++ xinvr1.nvgb1 = 373.0698m       
++ xinvr1.nvgf1 = 373.0698m       
++ xinvr2.n1 =   1.0000        
++ xinvr2.pvgb1 = 300.8551m       
++ xinvr2.pvgf1 = 300.8551m       
+***   END: Saved Operating Point ***                     

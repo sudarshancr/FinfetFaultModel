@@ -1,0 +1,61 @@
+***** HSPICE -- G-2012.06 32-BIT (May 27 2012) sparcOS5 ******
+ Input File: sram_45nm_LP.sp
+ lic: No 'setenv LM_LICENSE_FILE' in current environment'
+ lic:
+ lic: FLEXlm: v10.8
+ lic: USER:   coimbasn             HOSTNAME: everest.rhod.uc.edu
+ lic: HOSTID: 8300e27a             PID:      27494
+ lic: Using FLEXlm license file:
+ lic: 27000@olympus.ececs.engr.uc.edu
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 20-jun-2013/2011.09
+ lic: 1(in_use)/50(total) FLOATING license(s) on SERVER olympus.ececs.engr.uc.ed
+ lic:
+ init: begin read circuit files,  cpu clock=  1.70E-01
+       option search   = /home/montjoy/G-2012.06/hspice/hspice/parts/ad
+       option search   = /home/montjoy/G-2012.06/hspice/hspice/parts/ad
+       option search   = /home/montjoy/G-2012.06/hspice/hspice/parts/beha
+                         ve
+       option search   = /home/montjoy/G-2012.06/hspice/hspice/parts/bjt
+       option search   = /home/montjoy/G-2012.06/hspice/hspice/parts/burr
+                         _brn
+       option search   = /home/montjoy/G-2012.06/hspice/hspice/parts/coml
+                         inear
+       option search   = /home/montjoy/G-2012.06/hspice/hspice/parts/dio
+       option search   = /home/montjoy/G-2012.06/hspice/hspice/parts/fet
+       option search   = /home/montjoy/G-2012.06/hspice/hspice/parts/lin_
+                         tech
+       option search   = /home/montjoy/G-2012.06/hspice/hspice/parts/pci
+       option search   = /home/montjoy/G-2012.06/hspice/hspice/parts/sign
+                         et
+       option search   = /home/montjoy/G-2012.06/hspice/hspice/parts/ti
+       option search   = /home/montjoy/G-2012.06/hspice/hspice/parts/tlin
+                         e
+       option search   = /home/montjoy/G-2012.06/hspice/hspice/parts/xili
+                         nx
+       option runlvl
+       option post     =     2.00
+       option brief
+       option post
+ init: end read circuit files,  cpu clock=  2.30E-01 memory=    298 kb
+ init: begin check errors,  cpu clock=  2.30E-01
+ init: end check errors,  cpu clock=  7.70E-01 memory=   1001 kb
+ init: begin setup matrix, pivot=     0 cpu clock=  7.70E-01
+       establish matrix -- done,  cpu clock=  7.70E-01 memory=   1136 kb
+       re-order matrix -- done,  cpu clock=  7.80E-01 memory=   1137 kb
+ init: end setup matrix,  cpu clock=  7.80E-01 memory=   1344 kb
+ output: sram_45nm_LP.tr0
+ sweep: tran tran0    begin, stop_t=  4.50E-08 #sweeps= 451 cpu clock=  8.50E-01
+ tran: time= 4.5185E-09 tot_iter=     137 conv_iter=      40 cpu clock= 5.08E+00
+ tran: time= 9.8000E-09 tot_iter=     199 conv_iter=      63 cpu clock= 6.98E+00
+ tran: time= 1.3662E-08 tot_iter=     275 conv_iter=      88 cpu clock= 9.28E+00
+ tran: time= 1.8650E-08 tot_iter=     381 conv_iter=     126 cpu clock= 1.25E+01
+ tran: time= 2.2500E-08 tot_iter=     449 conv_iter=     149 cpu clock= 1.46E+01
+ tran: time= 2.7000E-08 tot_iter=     690 conv_iter=     222 cpu clock= 2.19E+01
+ tran: time= 3.1769E-08 tot_iter=     789 conv_iter=     256 cpu clock= 2.49E+01
+ tran: time= 3.6097E-08 tot_iter=     879 conv_iter=     286 cpu clock= 2.76E+01
+ tran: time= 4.0721E-08 tot_iter=     993 conv_iter=     326 cpu clock= 3.11E+01
+ tran: time= 4.5000E-08 tot_iter=    1009 conv_iter=     332 cpu clock= 3.16E+01
+ sweep: tran tran0    end,  cpu clock=  3.16E+01 memory=   1348 kb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)
