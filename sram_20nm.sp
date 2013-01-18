@@ -1,4 +1,4 @@
-*SRAM full electrical schematic by Rathna Keerthi 
+*SRAM full electrical schematic by Sudarshan Ramaanujan 
 
 *The design consists of two single FinFET SRAM in a column *along with precharge , write driver and sense *Amplifier *circuitry. 
 
